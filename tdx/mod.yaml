@@ -1,0 +1,225 @@
+Metadata:
+	Title: Tiberian Dawn Xtended
+	Description: What might C&C1 have been like with a large, RA2-YR-like expansion\nthat adds new units, new features and gives the game balance\nan overhaul?\n\nTiberian Dawn Xtended is my attempt to answer that question while trying\nto stay closer to the overall "feel" of the original than OpenRA's\ninterpretation of Tiberian Dawn. 
+	Version: beta 0.104 (20150514)
+	Author: Reaperrr
+
+Folders:
+	.
+	./mods/tdx
+	./mods/tdx/bits
+	./mods/tdx/bits/caribic
+	./mods/tdx/bits/cnc
+	./mods/tdx/bits/jungle
+	./mods/tdx/bits/ss
+	./mods/tdx/bits/tdx_aud
+	./mods/tdx/ui/uibits
+	~^Content/tdx
+
+MapFolders:
+	./mods/tdx/maps: System
+	~^maps/tdx: User
+
+Packages:
+	speech.mix
+	conquer.mix
+	sounds.mix
+	tempicnh.mix
+	temperat.mix
+	winter.mix
+	desert.mix
+	snow.mix
+	~tdx-scores.mix:CRC32
+	~movies-gdi.mix
+	~movies-nod.mix
+	~movies.mix
+
+Rules:
+	./mods/tdx/rules/world.yaml
+	./mods/tdx/rules/ai.yaml
+	./mods/tdx/rules/player.yaml
+	./mods/tdx/rules/player-classic-production.yaml
+	./mods/tdx/rules/defaults.yaml
+	./mods/tdx/rules/aircraft.yaml
+	./mods/tdx/rules/structures.yaml
+	./mods/tdx/rules/infantry.yaml
+	./mods/tdx/rules/vehicles.yaml
+	./mods/tdx/rules/tdx_aircraft.yaml
+	./mods/tdx/rules/tdx_vehicles.yaml
+	./mods/tdx/rules/civilian.yaml
+	./mods/tdx/rules/ships.yaml
+	./mods/tdx/rules/misc.yaml
+	./mods/tdx/rules/trees.yaml
+	./mods/tdx/rules/civilian-desert.yaml
+	./mods/tdx/rules/tech.yaml
+	./mods/tdx/rules/husks.yaml
+
+Weapons:
+	./mods/tdx/weapons/ballistic.yaml
+	./mods/tdx/weapons/missiles.yaml
+	./mods/tdx/weapons/other-weapons.yaml
+	./mods/tdx/weapons/smallarms.yaml
+	./mods/tdx/weapons/superweapons.yaml
+
+Sequences:
+	./mods/tdx/sequences/tdx-aircraft.yaml
+	./mods/tdx/sequences/tdx-explosions.yaml
+	./mods/tdx/sequences/tdx-misc.yaml
+	./mods/tdx/sequences/tdx-vehicles.yaml
+	./mods/tdx/sequences/cnc-aircraft.yaml
+	./mods/tdx/sequences/cnc-structures.yaml
+	./mods/tdx/sequences/cnc-vehicles.yaml
+	./mods/tdx/sequences/cnc-infantry.yaml
+	./mods/tdx/sequences/cnc-civilian.yaml
+	./mods/tdx/sequences/cnc-decorations.yaml
+	./mods/tdx/sequences/cnc-funpark.yaml
+	./mods/tdx/sequences/cnc-campaign.yaml
+
+Cursors:
+	./mods/tdx/cursors.yaml
+
+Assemblies:
+	./mods/common/OpenRA.Mods.Common.dll
+	./mods/ra/OpenRA.Mods.RA.dll
+	./mods/cnc/OpenRA.Mods.Cnc.dll
+	./mods/tdx/OpenRA.Mods.TDX.dll
+	
+Translations:
+	./mods/tdx/languages/english.yaml
+
+Voices:
+	./mods/tdx/audio/voices.yaml
+
+Notifications:
+	./mods/tdx/audio/notifications.yaml
+
+Music:
+	./mods/tdx/audio/music.yaml
+
+Missions:
+	./mods/tdx/missions.yaml
+
+TileSets:
+	./mods/tdx/tilesets/desert.yaml
+	./mods/tdx/tilesets/winter.yaml
+	./mods/tdx/tilesets/snow.yaml
+	./mods/tdx/tilesets/temperat.yaml
+	./mods/tdx/tilesets/jungle.yaml
+	./mods/tdx/tilesets/caribic.yaml
+
+SupportsMapsFrom: cnc, tdx
+
+SpriteFormats: ShpTD, TmpTD, ShpTS, TmpRA
+
+SpriteSequenceFormat: TilesetSpecificSpriteSequence
+	TilesetExtensions:
+		TEMPERAT: .tem
+		WINTER: .win
+		SNOW: .sno
+		DESERT: .des
+		JUNGLE: .jun
+		CARIBIC: .car
+
+LoadScreen: LogoStripeLoadScreen
+	Image: ./mods/tdx/ui/uibits/loadscreen.png
+	Text: Loading
+
+Fonts:
+	Small:
+		Font:./mods/common/FreeSans.ttf
+		Size:12
+	Regular:
+		Font:./mods/common/FreeSans.ttf
+		Size:14
+	Bold:
+		Font:./mods/common/FreeSansBold.ttf
+		Size:14
+	Title:
+		Font:./mods/common/FreeSansBold.ttf
+		Size:32
+	MediumBold:
+		Font:./mods/common/FreeSansBold.ttf
+		Size:18
+	BigBold:
+		Font:./mods/common/FreeSansBold.ttf
+		Size:24
+	Tiny:
+		Font:./mods/common/FreeSans.ttf
+		Size:10
+	TinyBold:
+		Font:./mods/common/FreeSansBold.ttf
+		Size:10
+
+ChromeMetrics:
+	./mods/tdx/ui/metrics.yaml
+
+Chrome:
+	./mods/tdx/ui/chrome.yaml
+
+ChromeLayout:
+	./mods/tdx/ui/chrome/install.yaml
+	./mods/ra/chrome/ingame.yaml
+	./mods/ra/chrome/ingame-chat.yaml
+	./mods/ra/chrome/ingame-diplomacy.yaml
+	./mods/ra/chrome/ingame-fmvplayer.yaml
+	./mods/ra/chrome/ingame-menu.yaml
+	./mods/ra/chrome/ingame-info.yaml
+	./mods/ra/chrome/ingame-infoscripterror.yaml
+	./mods/ra/chrome/ingame-infobriefing.yaml
+	./mods/ra/chrome/ingame-infoobjectives.yaml
+	./mods/ra/chrome/ingame-infostats.yaml
+	./mods/ra/chrome/ingame-observer.yaml
+	./mods/ra/chrome/ingame-observerstats.yaml
+	./mods/tdx/ui/chrome/ingame-player.yaml
+	./mods/ra/chrome/ingame-debug.yaml
+	./mods/ra/chrome/ingame-leavemap.yaml
+	./mods/tdx/ui/chrome/mainmenu.yaml
+	./mods/ra/chrome/settings.yaml
+	./mods/ra/chrome/credits.yaml
+	./mods/ra/chrome/lobby.yaml
+	./mods/ra/chrome/lobby-mappreview.yaml
+	./mods/ra/chrome/lobby-playerbin.yaml
+	./mods/ra/chrome/lobby-dialogs.yaml
+	./mods/ra/chrome/color-picker.yaml
+	./mods/ra/chrome/map-chooser.yaml
+	./mods/ra/chrome/create-server.yaml
+	./mods/ra/chrome/serverbrowser.yaml
+	./mods/ra/chrome/connection.yaml
+	./mods/ra/chrome/directconnect.yaml
+	./mods/ra/chrome/replaybrowser.yaml
+	./mods/ra/chrome/dropdowns.yaml
+	./mods/tdx/ui/chrome/musicplayer.yaml
+	./mods/ra/chrome/tooltips.yaml
+	./mods/ra/chrome/assetbrowser.yaml
+	./mods/ra/chrome/missionbrowser.yaml
+	./mods/ra/chrome/confirmation-dialogs.yaml
+
+ContentInstaller:
+	MenuWidget: INSTALL_PANEL
+	MusicMenuWidget: INSTALL_MUSIC_PANEL
+	TestFiles: conquer.mix, desert.mix, sounds.mix, speech.mix, temperat.mix, tempicnh.mix, winter.mix
+	FilesToCopy: CONQUER.MIX, DESERT.MIX, SOUNDS.MIX, TEMPERAT.MIX, WINTER.MIX
+	FilesToExtract: speech.mix, tempicnh.mix, transit.mix
+	PackageMirrorList: http://www.openra.net/packages/cnc-mirrors.txt
+	DiskTestFiles: conquer.mix, desert.mix, install/setup.z
+	PackageToExtractFromCD: install/setup.z
+	ExtractFilesFromCD: speech.mix, tempicnh.mix, transit.mix
+	CopyFilesFromCD: conquer.mix, desert.mix, general.mix, sounds.mix, temperat.mix, winter.mix
+	ShippedSoundtracks: 1
+	MusicPackageMirrorList: http://tdx.ppmsite.com/tdx-music-mirrors.txt
+
+ServerTraits:
+	LobbyCommands
+	PlayerPinger
+	MasterServerPinger
+	LobbySettingsNotification
+	ColorValidator
+
+LobbyDefaults:
+	AllowCheats: false
+	Crates: true
+	StartingUnitsClass: heavy
+	FragileAlliances: false
+	Shroud: true
+	Fog: true
+	TechLevel: Unrestricted

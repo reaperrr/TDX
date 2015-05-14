@@ -1,0 +1,73 @@
+HIND:
+	Inherits: ^Helicopter
+	Valued:
+		Cost: 1200
+	Tooltip:
+		Name: Hind
+		Description: Helicopter Gunship with Chaingun.\n  Strong vs Infantry, Light Vehicles\n  Weak vs Tanks
+	Buildable:
+		BuildPaletteOrder: 20
+		Prerequisites: hpad, anyhq, ~aircraft.nod, ~techlevel.medium
+		Queue: Aircraft
+	Selectable:
+		Bounds: 30,28
+	Helicopter:
+		RearmBuildings: hpad
+		ROT: 4
+		Speed: 171
+	Health:
+		HP: 225
+	Armor:
+		Type: AirHeavy
+	RevealsShroud:
+		Range: 10c0
+	Armament@PRIMARY:
+		Weapon: HeliAGGun
+		LocalOffset: 256,-171,-85
+		MuzzleSequence: muzzle
+		MuzzleSplitFacings: 16
+		MuzzlePalette: flashyeffect
+	Armament@SECONDARY:
+		Name: secondary
+		Weapon: HeliAAGun
+		LocalOffset: 256,-171,-85
+		MuzzleSequence: muzzle
+		MuzzleSplitFacings: 16
+		MuzzlePalette: flashyeffect
+	AttackHeli:
+		FacingTolerance: 20
+	AmmoPool:
+		Ammo: 10
+		PipCount: 5
+		SelfReloads: true
+		ReloadCount: 10
+		SelfReloadTicks: 200
+		ResetOnFire: False
+	RenderUnit:
+	WithRotor:
+		Offset: 0,0,85
+	WithMuzzleFlash:
+		SplitFacings: true
+	WithShadow:
+#	LeavesHusk:
+#		HuskActor: HIND.Husk
+	AutoTarget:
+	Explodes:
+		Weapon: HeliExplode
+		EmptyWeapon: HeliExplode
+
+HIND.Husk:
+	Inherits: ^HelicopterHusk
+	Tooltip:
+		Name: Hind
+	Helicopter:
+		ROT: 4
+		Speed: 171
+	RevealsShroud:
+		Range: 10c0
+	WithRotor:
+		Offset: 0,0,85
+	RenderUnit:
+		Image: hind
+	WithShadow:
+

@@ -1,0 +1,266 @@
+Player:
+	HackyAI@RushAI:
+		Name: Rush AI
+		SquadSize: 10
+		AssignRolesInterval: 30
+		AttackForceInterval: 50
+		RushInterval: 500
+		StructureProductionInactiveDelay: 125
+		StructureProductionActiveDelay: 10
+		BuildingCommonNames:
+			ConstructionYard: fact
+			Refinery: proc
+			Power: nuke,nuk2
+			Barracks: pyle,hand
+			VehiclesFactory: weap,afld
+			Production: pyle,hand,weap,afld,hpad
+			Silo: silo
+		UnitsCommonNames:
+			Mcv: mcv
+		BuildingQueues: Building
+		DefenseQueues: Defense
+		UnitQueues: Vehicle, Infantry, Aircraft
+		BuildingLimits:
+			proc: 4
+			pyle: 3
+			hand: 3
+			hq: 1
+			weap: 3
+			afld: 3
+			hpad: 2
+			atwr: 3
+			obli: 2
+			sam: 2
+			eye: 1
+			tmpl: 1
+			biolab.nod: 1
+			fix: 0
+			silo: 1
+		BuildingFractions:
+			proc: 20%
+			nuke: 9%
+			pyle: 5%
+			hand: 5%
+			hq: 4%
+			nuk2: 10%
+			weap: 10%
+			afld: 10%
+			gtwr: 3%
+			gun: 3%
+			atwr: 3%
+			obli: 2%
+			sam: 1%
+			eye: 1%
+			tmpl: 1%
+			biolab.nod: 3%
+			silo: 0%
+			fix: 0%
+			hpad: 2%
+		UnitsToBuild:
+			e1: 14%
+			e3: 7%
+			e2: 10%
+			e4: 7%
+			e5: 5%
+			harv: 1%
+			bggy: 10%
+			bike: 40%
+			napc: 15%
+			ltnk: 35%
+			t55h: 30%
+			ftnk: 15%
+			ctnk: 20%
+			arty: 20%
+			stnk: 40%
+			jeep: 10%
+			apc: 15%
+			mtnk: 30%
+			msam: 20%
+			mrpg: 30%
+			htnk: 50%
+			hind: 5%
+			orca: 5%
+		SupportPowerDecision@Airstrike:
+			OrderName: AirstrikePowerInfoOrder
+			MinimumAttractiveness: 2000
+			Consideration@1:
+				Against: Enemy
+				Types: Vehicle, Infantry
+				Attractiveness: 1
+				TargetMetric: Value
+				CheckRadius: 2c0
+			Consideration@2:
+				Against: Ally
+				Types: Ground, Water
+				Attractiveness: -10
+				TargetMetric: Value
+				CheckRadius: 2c0
+		SupportPowerDecision@IonCannonPower:
+			OrderName: IonCannonPowerInfoOrder
+			MinimumAttractiveness: 1500
+			FineScanRadius: 2
+			Consideration@1:
+				Against: Enemy
+				Types: Air, Tank, Vehicle, Infantry
+				Attractiveness: 2
+				TargetMetric: Value
+				CheckRadius: 2c0
+			Consideration@2:
+				Against: Enemy
+				Types: Structure
+				Attractiveness: 1
+				TargetMetric: Value
+				CheckRadius: 2c0
+			Consideration@3:
+				Against: Ally
+				Types: Air, Ground, Water
+				Attractiveness: -10
+				TargetMetric: Value
+				CheckRadius: 3c0
+		SupportPowerDecision@NukePower:
+			OrderName: NukePowerInfoOrder
+			MinimumAttractiveness: 3000
+			Consideration@1:
+				Against: Enemy
+				Types: Structure
+				Attractiveness: 1
+				TargetMetric: Value
+				CheckRadius: 5c0
+			Consideration@2:
+				Against: Ally
+				Types: Air, Ground, Water
+				Attractiveness: -10
+				TargetMetric: Value
+				CheckRadius: 7c0
+	HackyAI@TurtleAI:
+		Name: Turtle AI
+		SquadSize: 25
+		AssignRolesInterval: 50
+		AttackForceInterval: 50
+		RushInterval: 1000
+		StructureProductionInactiveDelay: 125
+		StructureProductionActiveDelay: 10
+		BuildingCommonNames:
+			ConstructionYard: fact
+			Refinery: proc
+			Power: nuke,nuk2
+			Barracks: pyle,hand
+			VehiclesFactory: weap,afld
+			Production: pyle,hand,weap,afld,hpad
+			Silo: silo
+		UnitsCommonNames:
+			Mcv: mcv
+		BuildingQueues: Building
+		DefenseQueues: Defense
+		UnitQueues: Vehicle, Infantry, Aircraft
+		BuildingLimits:
+			proc: 4
+			pyle: 3
+			hand: 3
+			hq: 1
+			weap: 3
+			afld: 3
+			hpad: 2
+			atwr: 6
+			obli: 4
+			sam: 3
+			eye: 1
+			tmpl: 1
+			biolab.nod: 1
+			fix: 0
+			silo: 1
+		BuildingFractions:
+			proc: 20%
+			nuke: 9%
+			pyle: 5%
+			hand: 5%
+			hq: 4%
+			nuk2: 9%
+			weap: 9%
+			afld: 9%
+			gtwr: 5%
+			gun: 6%
+			atwr: 9%
+			obli: 7%
+			sam: 7%
+			eye: 1%
+			tmpl: 1%
+			biolab.nod: 3%
+			silo: 1%
+			fix: 0%
+			hpad: 2%
+		UnitsToBuild:
+			e1: 5%
+			e3: 15%
+			e2: 10%
+			e4: 7%
+			e5: 5%
+			harv: 1%
+			bggy: 5%
+			bike: 20%
+			ltnk: 35%
+			t55h: 50%
+			ftnk: 10%
+			ctnk: 25%
+			arty: 40%
+			stnk: 20%
+			jeep: 5%
+			mtnk: 30%
+			msam: 20%
+			mrpg: 35%
+			htnk: 50%
+			hind: 5%
+			orca: 5%
+		SupportPowerDecision@Airstrike:
+			OrderName: AirstrikePowerInfoOrder
+			MinimumAttractiveness: 2000
+			Consideration@1:
+				Against: Enemy
+				Types: Vehicle, Infantry
+				Attractiveness: 1
+				TargetMetric: Value
+				CheckRadius: 2c0
+			Consideration@2:
+				Against: Ally
+				Types: Ground, Water
+				Attractiveness: -10
+				TargetMetric: Value
+				CheckRadius: 2c0
+		SupportPowerDecision@IonCannonPower:
+			OrderName: IonCannonPowerInfoOrder
+			MinimumAttractiveness: 1500
+			FineScanRadius: 2
+			Consideration@1:
+				Against: Enemy
+				Types: Air, Tank, Vehicle, Infantry
+				Attractiveness: 2
+				TargetMetric: Value
+				CheckRadius: 2c0
+			Consideration@2:
+				Against: Enemy
+				Types: Structure
+				Attractiveness: 1
+				TargetMetric: Value
+				CheckRadius: 2c0
+			Consideration@3:
+				Against: Ally
+				Types: Air, Ground, Water
+				Attractiveness: -10
+				TargetMetric: Value
+				CheckRadius: 3c0
+		SupportPowerDecision@NukePower:
+			OrderName: NukePowerInfoOrder
+			MinimumAttractiveness: 3000
+			Consideration@1:
+				Against: Enemy
+				Types: Structure
+				Attractiveness: 1
+				TargetMetric: Value
+				CheckRadius: 5c0
+			Consideration@2:
+				Against: Ally
+				Types: Air, Ground, Water
+				Attractiveness: -10
+				TargetMetric: Value
+				CheckRadius: 7c0
+

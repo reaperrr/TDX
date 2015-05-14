@@ -1,0 +1,1134 @@
+split2:
+	Defaults:
+		Offset: 11, -15
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+			CARIBIC: TEMPERAT
+	make:
+		Length: 30
+	active:
+		Start: 30
+		Length: 24
+	idle:
+		Start: 54
+
+split3:
+	Defaults:
+		Offset: 7, -13
+		UseTilesetExtension: true
+		TilesetOverrides:
+			CARIBIC: DESERT
+	make:
+		Length: 30
+	active:
+		Start: 30
+		Length: 24
+	idle:
+		Start: 54
+
+piraship:
+	Defaults:
+		AddExtension: false
+		Offset: 2, -10
+	idle: piraship.car
+
+rock1:
+	idle: rock1.des
+		AddExtension: false
+
+rock2:
+	idle: rock2.des
+		AddExtension: false
+
+rock3:
+	idle: rock3.des
+		AddExtension: false
+
+rock4:
+	idle: rock4.des
+		AddExtension: false
+
+rock5:
+	idle: rock5.des
+		AddExtension: false
+
+rock6:
+	idle: rock6.des
+		AddExtension: false
+
+rock7:
+	idle: rock7.des
+		AddExtension: false
+
+tc04:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+			CARIBIC: TEMPERAT
+	idle:
+	damaged-idle:
+		Start: 1
+	dead:
+		Start: 2
+		Length: 8
+		Tick: 80
+
+tc05:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+			CARIBIC: TEMPERAT
+	idle:
+	damaged-idle:
+		Start: 1
+	dead:
+		Start: 2
+		Length: 8
+		Tick: 80
+
+tc03:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+			CARIBIC: TEMPERAT
+	idle:
+	damaged-idle:
+		Start: 1
+	dead:
+		Start: 2
+		Length: 8
+		Tick: 80
+
+tc02:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+			CARIBIC: TEMPERAT
+	idle:
+	damaged-idle:
+		Start: 1
+	dead:
+		Start: 2
+		Length: 8
+		Tick: 80
+
+tc01:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+			CARIBIC: TEMPERAT
+	idle:
+	damaged-idle:
+		Start: 1
+	dead:
+		Start: 2
+		Length: 8
+		Tick: 80
+
+t18:
+	Defaults:
+		AddExtension: false
+	idle: t18.des
+	damaged-idle: t18.des
+		Start: 1
+	dead: t18.des
+		Start: 2
+		Length: 8
+		Tick: 80
+
+t17:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+#	damaged-idle:
+#		Start: 1
+	dead:
+		Start: 2
+		Length: 8
+		Tick: 80
+
+t16:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+#	damaged-idle:
+#		Start: 1
+#	dead:
+#		Start: 2
+#		Length: 8
+#		Tick: 80
+
+t15:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+#	damaged-idle:
+#		Start: 1
+	dead:
+		Start: 2
+		Length: 8
+		Tick: 80
+
+t14:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+#	damaged-idle:
+#		Start: 1
+	dead: t18.des
+		UseTilesetExtension: false
+		AddExtension: false
+		Start: 2
+		Length: 8
+		Tick: 80
+
+t13:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+#	damaged-idle:
+#		Start: 1
+	dead:
+		Start: 2
+		Length: 8
+		Tick: 80
+
+t12:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+#	damaged-idle:
+#		Start: 1
+	dead:
+		Start: 2
+		Length: 8
+		Tick: 80
+
+t11:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+#	damaged-idle:
+#		Start: 1
+	dead:
+		Start: 2
+		Length: 8
+		Tick: 80
+
+t10:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+#	damaged-idle:
+#		Start: 1
+	dead:
+		Start: 2
+		Length: 8
+		Tick: 80
+
+t09:
+	Defaults:
+		AddExtension: false
+	idle: t09.des
+	damaged-idle: t09.des
+		Start: 1
+	dead: t09.des
+		Start: 2
+		Length: 8
+		Tick: 80
+
+t08:
+	Defaults:
+		UseTilesetExtension: true
+	idle:
+#	damaged-idle:
+#		Start: 1
+	dead: t08.des
+		UseTilesetExtension: false
+		AddExtension: false
+		Start: 2
+		Length: 8
+		Tick: 80
+
+t07:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+#	damaged-idle:
+#		Start: 1
+#	dead:
+#		Start: 2
+#		Length: 8
+#		Tick: 80
+
+t06:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+#	damaged-idle:
+#		Start: 1
+#	dead:
+#		Start: 2
+#		Length: 8
+#		Tick: 80
+
+t05:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+#	damaged-idle:
+#		Start: 1
+#	dead:
+#		Start: 2
+#		Length: 8
+#		Tick: 80
+
+t04:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: t04
+#	damaged-idle: t04
+#		Start: 1
+#	dead: t04
+#		Start: 2
+#		Length: 8
+#		Tick: 80
+
+t03:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+#	damaged-idle:
+#		Start: 1
+	dead:
+		Start: 2
+		Length: 8
+		Tick: 80
+
+t02:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+#	damaged-idle:
+#		Start: 1
+#	dead:
+#		Start: 2
+#		Length: 8
+#		Tick: 80
+
+t01:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+#	damaged-idle:
+#		Start: 1
+#	dead:
+#		Start: 2
+#		Length: 8
+#		Tick: 80
+
+v01:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+	damaged-idle:
+		Start: 1
+
+v01.husk:
+	idle: v01
+		Start: 2
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+
+v02:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+	damaged-idle:
+		Start: 1
+
+v02.husk:
+	idle: v02
+		Start: 2
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+
+v03:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+	damaged-idle:
+		Start: 1
+
+v03.husk:
+	idle: v03
+		Start: 2
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+
+v04:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+	damaged-idle:
+		Start: 1
+
+v04.husk:
+	idle: v04
+		Start: 2
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+
+v05:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+	damaged-idle:
+		Start: 1
+
+v05.husk:
+	idle: v05
+		Start: 2
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+
+v06:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+	damaged-idle:
+		Start: 1
+
+v06.husk:
+	idle: v06
+		Start: 2
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+
+v07:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+	damaged-idle:
+		Start: 2
+
+v07.husk:
+	idle: v07
+		Start: 2
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+
+v08:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+	damaged-idle:
+		Start: 1
+
+v08.husk:
+	idle: v08
+		Start: 2
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+
+v09:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+	damaged-idle:
+		Start: 1
+
+v09.husk:
+	idle: v09
+		Start: 2
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+
+v10:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+	damaged-idle:
+		Start: 1
+
+v10.husk:
+	idle: v10
+		Start: 2
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+
+v11:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+	damaged-idle:
+		Start: 1
+
+v11.husk:
+	idle: v11
+		Start: 2
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+
+v12:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+		ZOffset: -512
+	damaged-idle:
+		Start: 1
+		ZOffset: -512
+
+v12.husk:
+	idle: v12
+		Start: 2
+		ZOffset: -512
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+
+v13:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+		ZOffset: -512
+	damaged-idle:
+		Start: 1
+		ZOffset: -512
+
+v13.husk:
+	idle: v13
+		Start: 2
+		ZOffset: -512
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+
+v14:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+		ZOffset: -512
+	damaged-idle:
+		Start: 1
+		ZOffset: -512
+
+v14.husk:
+	idle: v14
+		Start: 2
+		ZOffset: -512
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+
+v15:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+		ZOffset: -512
+	damaged-idle:
+		Start: 1
+		ZOffset: -512
+
+v15.husk:
+	idle: v15
+		Start: 2
+		ZOffset: -512
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+
+v16:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+		ZOffset: -512
+	damaged-idle:
+		Start: 1
+		ZOffset: -512
+
+v16.husk:
+	idle: v16
+		Start: 2
+		ZOffset: -512
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+
+v17:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+		ZOffset: -512
+	damaged-idle:
+		Start: 1
+		ZOffset: -512
+
+v17.husk:
+	idle: v17
+		Start: 2
+		ZOffset: -512
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+
+v18:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+	idle:
+		ZOffset: -512
+	damaged-idle:
+		Start: 1
+		ZOffset: -512
+
+v18.husk:
+	idle: v18
+		Start: 2
+		ZOffset: -512
+		UseTilesetExtension: true
+		TilesetOverrides:
+			DESERT: TEMPERAT
+
+v19:
+	idle:
+		Length: 14
+		Tick: 120
+	damaged-idle:
+		Start: 14
+		Length: 14
+		Tick: 120
+
+v19.husk:
+	idle: v19
+		Start: 28
+	fire-start: flmspt
+		Length: *
+		Offset: 7,-15
+	fire-loop: flmspt
+		Start: 50
+		Length: *
+		Offset: 7,-15
+
+v20:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle:
+		Length: 3
+		Tick: 120
+	damaged-idle:
+		Start: 3
+		Length: 3
+		Tick: 120
+
+v20.husk:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v20
+		Start: 6
+
+v21:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle:
+		Length: 3
+		Tick: 120
+	damaged-idle:
+		Start: 3
+		Length: 3
+		Tick: 120
+
+v21.husk:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v21
+		Start: 6
+
+v22:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle:
+		Length: 3
+		Tick: 120
+	damaged-idle:
+		Start: 3
+		Length: 3
+		Tick: 120
+
+v22.husk:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v22
+		Start: 6
+
+v23:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v23
+		Length: 3
+		Tick: 120
+	damaged-idle: v23
+		Start: 3
+		Length: 3
+		Tick: 120
+
+v23.husk:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v23
+		Start: 6
+
+v24:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v24
+	damaged-idle: v24
+		Start: 1
+
+v24.husk:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v24
+		Start: 2
+
+v25:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v25
+	damaged-idle: v25
+		Start: 1
+
+v25.husk:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v25
+		Start: 2
+
+v26:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v26
+	damaged-idle: v26
+		Start: 1
+
+v26.husk:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v26
+		Start: 2
+
+v27:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v27
+	damaged-idle: v27
+		Start: 1
+
+v27.husk:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v27
+		Start: 2
+
+v28:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v28
+	damaged-idle: v28
+		Start: 1
+
+v28.husk:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v28
+		Start: 2
+
+v29:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v29
+	damaged-idle: v29
+		Start: 1
+
+v29.husk:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v29
+		Start: 2
+
+v30:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v30
+	damaged-idle: v30
+		Start: 2
+
+v30.husk:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v30
+		Start: 2
+
+v31:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v31
+	damaged-idle: v31
+		Start: 1
+
+v31.husk:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v31
+		Start: 2
+
+v32:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v32
+	damaged-idle: v32
+		Start: 1
+
+v32.husk:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v32
+		Start: 2
+
+v33:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v33
+	damaged-idle: v33
+		Start: 1
+
+v33.husk:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v33
+		Start: 2
+
+v34:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v34
+	damaged-idle: v34
+		Start: 1
+
+v34.husk:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v34
+		Start: 2
+
+v35:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v35
+	damaged-idle: v35
+		Start: 1
+
+v35.husk:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v35
+		Start: 2
+
+v36:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v36
+	damaged-idle: v36
+		Start: 1
+
+v36.husk:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v36
+		Start: 2
+
+v37:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v37
+	damaged-idle: v37
+		Start: 1
+
+v37.husk:
+	Defaults:
+		UseTilesetExtension: true
+		TilesetOverrides:
+			TEMPERAT: CARIBIC
+			JUNGLE: CARIBIC
+			WINTER: CARIBIC
+			SNOW: CARIBIC
+	idle: v37
+		Start: 2
+
+arco:
+	idle:
+	damaged-idle:
+		Start: 1
+
+arco.husk:
+	idle: arco
+		Start: 1

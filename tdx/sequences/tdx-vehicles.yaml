@@ -1,0 +1,216 @@
+t55h:
+	Defaults:
+		Length: *
+	idle:
+		Facings: 32
+		Length: 1
+		Offset: 0,2
+	turret:
+		Start: 32
+		Length: 1
+		Facings: 32
+		Offset: 0,2
+	muzzle0: cann-n
+	muzzle1: cann-nnw
+	muzzle2: cann-nw
+	muzzle3: cann-nww
+	muzzle4: cann-w
+	muzzle5: cann-sww
+	muzzle6: cann-sw
+	muzzle7: cann-ssw
+	muzzle8: cann-s
+	muzzle9: cann-sse
+	muzzle10: cann-se
+	muzzle11: cann-see
+	muzzle12: cann-e
+	muzzle13: cann-nee
+	muzzle14: cann-ne
+	muzzle15: cann-nne
+	icon: t55hicnh.shp
+		AddExtension: False
+		Length: 1
+
+mtnk2:
+	Defaults:
+		Length: *
+	idle:
+		Length: 1
+		Facings: 32
+	turret:
+		Start: 32
+		Length: 1
+		Facings: 32
+	muzzle0: cann-n
+	muzzle1: cann-nnw
+	muzzle2: cann-nw
+	muzzle3: cann-nww
+	muzzle4: cann-w
+	muzzle5: cann-sww
+	muzzle6: cann-sw
+	muzzle7: cann-ssw
+	muzzle8: cann-s
+	muzzle9: cann-sse
+	muzzle10: cann-se
+	muzzle11: cann-see
+	muzzle12: cann-e
+	muzzle13: cann-nee
+	muzzle14: cann-ne
+	muzzle15: cann-nne
+	icon: mtnkicnh.tem
+		AddExtension: False
+		Length: 1
+
+htnk2:
+	Defaults:
+		Length: *
+	idle:
+		Facings: 32
+		Length: 1
+	turret:
+		Start: 32
+		Facings: 32
+		Length: 1
+	muzzle0: cann-n
+	muzzle1: cann-nnw
+	muzzle2: cann-nw
+	muzzle3: cann-nww
+	muzzle4: cann-w
+	muzzle5: cann-sww
+	muzzle6: cann-sw
+	muzzle7: cann-ssw
+	muzzle8: cann-s
+	muzzle9: cann-sse
+	muzzle10: cann-se
+	muzzle11: cann-see
+	muzzle12: cann-e
+	muzzle13: cann-nee
+	muzzle14: cann-ne
+	muzzle15: cann-nne
+	icon: htnkicnh.tem
+		AddExtension: False
+		Length: 1
+
+mrpg:
+	idle:
+		Facings: 32
+		Offset: 0,4
+	muzzle: gunfire2
+		Length: 5
+		Tick: 50
+	icon: mrpgicnh.shp
+		AddExtension: False
+
+napc:
+	idle:
+		Facings: 32
+		Offset: 0,3
+#	muzzle: minigun
+#		Length: 6
+#		Facings: 8
+	muzzle0: minigun
+		Length: 6
+	muzzle1: mgun-nnw
+		Length: *
+	muzzle2: minigun
+		Start: 6
+		Length: 6
+	muzzle3: mgun-wnw
+		Length: *
+	muzzle4: minigun
+		Start: 12
+		Length: 6
+	muzzle5: mgun-wsw
+		Length: *
+	muzzle6: minigun
+		Start: 18
+		Length: 6
+	muzzle7: mgun-ssw
+		Length: *
+	muzzle8: minigun
+		Start: 24
+		Length: 6
+	muzzle9: mgun-sse
+		Length: *
+	muzzle10: minigun
+		Start: 30
+		Length: 6
+	muzzle11: mgun-ese
+		Length: *
+	muzzle12: minigun
+		Start: 36
+		Length: 6
+	muzzle13: mgun-ene
+		Length: *
+	muzzle14: minigun
+		Start: 42
+		Length: 6
+	muzzle15: mgun-nne
+		Length: *
+	close:
+		Start: 32
+		Length: 3
+		Offset: 0,3
+	unload:
+		Start: 32
+		Offset: 0,3
+	icon: napcicnh.shp
+		AddExtension: False
+
+ctnk:
+	Defaults:
+		Length: *
+	idle:
+		Facings: 32
+		Length: 1
+		Offset: 0,2
+	muzzle0: chem-00
+	muzzle1: chem-01
+	muzzle2: chem-02
+	muzzle3: chem-03
+	muzzle4: chem-04
+	muzzle5: chem-05
+	muzzle6: chem-06
+	muzzle7: chem-07
+	muzzle8: chem-08
+	muzzle9: chem-09
+		ZOffset: 127
+	muzzle10: chem-10
+		ZOffset: 127
+	muzzle11: chem-11
+		ZOffset: 127
+	muzzle12: chem-12
+		ZOffset: 127
+	muzzle13: chem-13
+		ZOffset: 127
+	muzzle14: chem-14
+		ZOffset: 127
+	muzzle15: chem-15
+		ZOffset: 127
+	muzzle16: chem-16
+		ZOffset: 127
+	muzzle17: chem-17
+		ZOffset: 127
+	muzzle18: chem-18
+		ZOffset: 127
+	muzzle19: chem-19
+		ZOffset: 127
+	muzzle20: chem-20
+		ZOffset: 127
+	muzzle21: chem-21
+		ZOffset: 127
+	muzzle22: chem-22
+		ZOffset: 127
+	muzzle23: chem-23
+		ZOffset: 127
+	muzzle24: chem-24
+		ZOffset: 127
+	muzzle25: chem-25
+	muzzle26: chem-26
+	muzzle27: chem-27
+	muzzle28: chem-28
+	muzzle29: chem-29
+	muzzle30: chem-30
+	muzzle31: chem-31
+	icon: ctnkicnh.shp
+		AddExtension: False
+		Length: 1

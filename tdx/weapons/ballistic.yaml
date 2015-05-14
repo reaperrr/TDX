@@ -1,0 +1,345 @@
+Grenade:
+	ReloadDelay: 60
+	Range: 4c0
+	Projectile: Bullet
+		Speed: 119
+		Blockable: false
+		Angle: 62
+		Inaccuracy: 213
+		Image: BOMB
+		Shadow: true
+	Warhead@1Dam: SpreadDamage
+		Spread: 256
+		Falloff: 100, 60, 30, 15, 0
+		Damage: 50
+		DeathType: 3
+		Versus:
+			None: 75
+			Wood: 50
+			Light: 75
+			Heavy: 35
+			AirHeavy: 45
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Crater
+	Warhead@3Eff: CreateEffect
+		Explosion: small_poof
+		ImpactSound: xplosml1.aud
+		InvalidImpactTypes: Water
+		ExplosionPalette: flashyeffect
+	Warhead@4Eff: CreateEffect
+		Explosion: sml_splash
+		ImpactSound: ssplash3.aud
+		ExplosionPalette: effectra
+		ValidImpactTypes: Water
+
+RPGLauncher:
+	ReloadDelay: 120
+	Range: 12c0
+	MinRange: 2c0
+	Burst: 6
+	BurstDelay: 10
+	Report: grenlnch.aud
+	ValidTargets: Ground, Water
+	Projectile: Bullet
+		Blockable: false
+		Shadow: true
+		Inaccuracy: 1c512
+		Angle: 75
+		Image: BOMB
+		Speed: 300
+	Warhead@1Dam: SpreadDamage
+		Spread: 256
+		Falloff: 100, 60, 30, 15, 0
+		Damage: 35
+		DeathType: 4
+		ValidTargets: Ground, Water
+		Versus:
+			None: 50
+			Wood: 65
+			Light: 75
+			Heavy: 50
+			Concrete: 100
+#			AirLight: 100
+			AirHeavy: 50
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Crater
+	Warhead@3Eff: CreateEffect
+		Explosion: small_poof
+		ImpactSound: xplomed1.aud
+		InvalidImpactTypes: Water
+		ExplosionPalette: flashyeffect
+	Warhead@4Eff: CreateEffect
+		Explosion: sml_splash
+		ImpactSound: ssplash2.aud
+		ExplosionPalette: effectra
+		ValidImpactTypes: Water
+
+70mm:
+	ReloadDelay: 50
+	Range: 4c0
+	Report: cannon3.aud
+	Projectile: Bullet
+		Image: 120MM
+		Speed: 853
+		Palette: flashyeffect
+	Warhead@1Dam: SpreadDamage
+		Spread: 85
+		Falloff: 100, 50, 25, 12, 0
+		Damage: 25
+		DeathType: 4
+		Versus:
+			None: 35
+			Wood: 75
+#			Light: 100
+			Heavy: 75
+			Concrete: 35
+#			AirLight: 100
+			AirHeavy: 75
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Crater
+	Warhead@3Eff: CreateEffect
+		Explosion: small_frag
+		ImpactSound: xplosml1.aud
+		InvalidImpactTypes: Water
+		ExplosionPalette: flashyeffect
+	Warhead@4Eff: CreateEffect
+		Explosion: sml_splash
+		ImpactSound: ssplash3.aud
+		ExplosionPalette: effectra
+		ValidImpactTypes: Water
+
+100mmDual:
+	ReloadDelay: 65
+	Burst: 2
+	BurstDelay: 10
+	Range: 5c0
+	Report: cannon4.aud
+	Projectile: Bullet
+		Image: 120MM
+		Speed: 682
+		Palette: flashyeffect
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		Falloff: 100, 40, 20, 10, 0
+		Damage: 30
+		DeathType: 4
+		Versus:
+			None: 25
+			Wood: 50
+			Light: 75
+#			Heavy: 100
+			Concrete: 50
+			AirLight: 75
+#			AirHeavy: 100
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Crater
+	Warhead@3Eff: CreateEffect
+		Explosion: small_frag
+		ImpactSound: xplosml1.aud
+		InvalidImpactTypes: Ground, Water
+		ExplosionPalette: flashyeffect
+	Warhead@4EffWater: CreateEffect
+		Explosion: sml_splash
+		ImpactSound: ssplash2.aud
+		ExplosionPalette: effectra
+		ValidImpactTypes: Water
+	Warhead@5EffDust: CreateEffect
+		Explosion: dust
+		ImpactSound: xplosml1.aud
+		ExplosionPalette: terrain
+		ValidImpactTypes: Ground
+
+105mm:
+	ReloadDelay: 60
+	Range: 5c0
+	Report: cannon5.aud
+	Projectile: Bullet
+		Image: 120MM
+		Speed: 682
+		Palette: flashyeffect
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		Falloff: 100, 40, 20, 10, 0
+		Damage: 30
+		DeathType: 4
+		Versus:
+			None: 25
+			Wood: 50
+			Light: 75
+#			Heavy: 100
+			Concrete: 50
+			AirLight: 75
+#			AirHeavy: 100
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Crater
+	Warhead@3Eff: CreateEffect
+		Explosion: small_frag
+		ImpactSound: xplosml1.aud
+		InvalidImpactTypes: Ground, Water
+		ExplosionPalette: flashyeffect
+	Warhead@4EffWater: CreateEffect
+		Explosion: sml_splash
+		ImpactSound: ssplash2.aud
+		ExplosionPalette: effectra
+		ValidImpactTypes: Water
+	Warhead@5EffDust: CreateEffect
+		Explosion: dust
+		ImpactSound: xplosml1.aud
+		ExplosionPalette: terrain
+		ValidImpactTypes: Ground
+
+120mm:
+	ReloadDelay: 60
+	Range: 5c0
+	Report: cannon5.aud
+	Projectile: Bullet
+		Image: 120MM
+		Speed: 682
+		Palette: flashyeffect
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		Falloff: 100, 40, 20, 10, 0
+		Damage: 40
+		DeathType: 4
+		Versus:
+			None: 30
+			Wood: 60
+			Light: 75
+#			Heavy: 100
+			Concrete: 50
+			AirLight: 75
+#			AirHeavy: 100
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Crater
+	Warhead@3Eff: CreateEffect
+		Explosion: med_frag1
+		ImpactSound: xplosml3.aud
+		InvalidImpactTypes: Ground, Water
+		ExplosionPalette: flashyeffect
+	Warhead@4EffWater: CreateEffect
+		Explosion: sml_splash
+		ImpactSound: ssplash2.aud
+		ExplosionPalette: effectra
+		ValidImpactTypes: Water
+	Warhead@5EffDust: CreateEffect
+		Explosion: dust
+		ImpactSound: xplosml1.aud
+		ExplosionPalette: terrain
+		ValidImpactTypes: Ground
+
+120mmDual:
+	ReloadDelay: 75
+	Range: 5c0
+	Report: cannon6.aud
+	Burst: 2
+	BurstDelay: 15
+	Projectile: Bullet
+		Image: 120MM
+		Speed: 682
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		Falloff: 100, 40, 20, 10, 0
+		Damage: 40
+		DeathType: 4
+		Versus:
+			None: 25
+			Wood: 50
+			Light: 75
+#			Heavy: 100
+			Concrete: 50
+			AirLight: 75
+#			AirHeavy: 100
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Crater
+	Warhead@3Eff: CreateEffect
+		Explosion: med_frag1
+		ImpactSound: xplosml3.aud
+		InvalidImpactTypes: Ground, Water
+		ExplosionPalette: flashyeffect
+	Warhead@4EffWater: CreateEffect
+		Explosion: sml_splash
+		ImpactSound: ssplash2.aud
+		ExplosionPalette: effectra
+		ValidImpactTypes: Water
+	Warhead@5EffDust: CreateEffect
+		Explosion: dust
+		ImpactSound: xplosml1.aud
+		ExplosionPalette: terrain
+		ValidImpactTypes: Ground
+
+TurretGun:
+	ReloadDelay: 50
+	Range: 6c0
+	Report: cannon7.aud
+	Projectile: Bullet
+		Image: 120MM
+		Speed: 853
+		Palette: flashyeffect
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		Falloff: 100, 40, 20, 10, 0
+		Damage: 40
+		DeathType: 4
+		Versus:
+			None: 25
+			Wood: 25
+#			Light: 100
+#			Heavy: 100
+			Concrete: 30
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Crater
+	Warhead@3Eff: CreateEffect
+		Explosion: med_frag1
+		ImpactSound: xplosml3.aud
+		InvalidImpactTypes: Ground, Water
+		ExplosionPalette: flashyeffect
+	Warhead@4EffWater: CreateEffect
+		Explosion: sml_splash
+		ImpactSound: ssplash2.aud
+		ExplosionPalette: effectra
+		ValidImpactTypes: Water
+	Warhead@5EffDust: CreateEffect
+		Explosion: dust
+		ImpactSound: xplosml1.aud
+		ExplosionPalette: terrain
+		ValidImpactTypes: Ground
+
+155mm:
+	ReloadDelay: 65
+	Range: 10c0
+	MinRange: 2c640
+	Report: artyfire.aud
+	Projectile: Bullet
+		Speed: 256
+		Blockable: false
+		Angle: 56
+#		Inaccuracy: 1c256
+		Image: 120MM
+		Palette: flashyeffect
+		Shadow: true
+	Warhead@1Dam: SpreadDamage
+		Spread: 256
+		Falloff: 100, 60, 30, 15, 0
+		Damage: 300#150
+		DeathType: 3
+		Versus:
+			None: 80
+			Wood: 75
+			Light: 90
+#			Heavy: 50
+#			Concrete: 100
+			AirLight: 80
+			AirHeavy: 60
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Crater
+	Warhead@3Eff: CreateEffect
+		Explosion: poof
+		ImpactSound: xploarty.aud
+		InvalidImpactTypes: Water
+		ExplosionPalette: flashyeffect
+	Warhead@4Eff: CreateEffect
+		Explosion: big_splash
+		ImpactSound: ssplash1.aud
+		ExplosionPalette: effectra
+		ValidImpactTypes: Water
+

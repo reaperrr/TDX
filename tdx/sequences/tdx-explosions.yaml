@@ -1,0 +1,40 @@
+explosion:
+	Defaults:
+		Length: *
+	nuke_explosion: atomsfx
+	piff: piff
+	piffs: piffpiff
+	chemball: chemball
+	small_napalm: napalm1
+	med_napalm: napalm2
+	big_napalm: napalm3
+	small_frag: veh-hit3
+	med_frag: frag1
+		Offset: -5, -3
+	big_frag: frag3
+	small_poof: veh-hit2
+	poof: art-exp1
+	small_building: veh-hit1
+		Offset: 0, -2
+	building: fball1
+		Offset: 0, -6
+# TDX additions
+	sml_ranapalm: ranapalm1
+		BlendMode: Translucency25
+	med_ranapalm: ranapalm2
+		BlendMode: Translucency25
+	big_ranapalm: ranapalm3
+		BlendMode: Translucency25
+	sml_chemexpl: chemexp1
+		BlendMode: Translucency25
+	med_chemexpl: chemexp2
+		BlendMode: Translucency25
+	big_chemexpl: chemexp3
+		BlendMode: Translucency25
+	sml_splash: h2o_exp3
+	med_splash: h2o_exp2
+	big_splash: h2o_exp1
+	dust: dust
+	med_frag1: frag1s
+		Offset: -2, -1
+	med_frag2: frag1m

@@ -1,0 +1,669 @@
+c1:
+	Defaults:
+		Tick: 80
+	stand:
+		Facings: 8
+	panic-stand:
+		Start: 8
+		Length: 1
+		Stride: 6
+		Facings: 8
+	panic-run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	run:
+		Start: 56
+		Length: 6
+		Facings: 8
+	shoot:
+		Start: 205
+		Length: 4
+		Facings: 8
+	idle1:
+		Start: 189
+		Length: 11
+	draw-pistol:
+		Start: 200
+		Length: 5
+	beg-for-mercy:
+		Start: 237
+		Length: 31
+	executed:
+		Start: 277
+		Length: 6
+	die1:
+		Start: 329
+		Length: 8
+	die2:
+		Start: 337
+		Length: 8
+	die3:
+		Start: 337
+		Length: 8
+	die4:
+		Start: 345
+		Length: 12
+	die5:
+		Start: 357
+		Length: 18
+	die6:
+		Start: 182
+		Length: 4
+	die-crushed: e1rot
+		Start: 16
+		Length: 4
+		Tick: 1600
+
+c2:
+	Defaults:
+		Tick: 80
+	stand:
+		Facings: 8
+	panic-stand:
+		Start: 8
+		Length: 1
+		Stride: 6
+		Facings: 8
+	panic-run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	run:
+		Start: 56
+		Length: 6
+		Facings: 8
+	shoot:
+		Start: 205
+		Length: 4
+		Facings: 8
+	idle1:
+		Start: 189
+		Length: 11
+	draw-pistol:
+		Start: 200
+		Length: 5
+	beg-for-mercy:
+		Start: 237
+		Length: 31
+	executed:
+		Start: 277
+		Length: 6
+	die1:
+		Start: 329
+		Length: 8
+	die2:
+		Start: 337
+		Length: 8
+	die3:
+		Start: 337
+		Length: 8
+	die4:
+		Start: 345
+		Length: 12
+	die5:
+		Start: 357
+		Length: 18
+	die6:
+		Start: 182
+		Length: 4
+	die-crushed: e1rot
+		Start: 16
+		Length: 4
+		Tick: 1600
+
+c3:
+	Defaults:
+		Tick: 80
+	stand:
+		Facings: 8
+	panic-stand:
+		Start: 8
+		Length: 1
+		Stride: 6
+		Facings: 8
+	panic-run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	run:
+		Start: 56
+		Length: 6
+		Facings: 8
+	shoot:
+		Start: 205
+		Length: 4
+		Facings: 8
+	idle1:
+		Start: 189
+		Length: 11
+	draw-pistol:
+		Start: 200
+		Length: 5
+	beg-for-mercy:
+		Start: 237
+		Length: 31
+	executed:
+		Start: 277
+		Length: 6
+	die1:
+		Start: 329
+		Length: 8
+	die2:
+		Start: 337
+		Length: 8
+	die3:
+		Start: 337
+		Length: 8
+	die4:
+		Start: 345
+		Length: 12
+	die5:
+		Start: 357
+		Length: 18
+	die6:
+		Start: 182
+		Length: 4
+	die-crushed: e1rot
+		Start: 16
+		Length: 4
+		Tick: 1600
+
+c4:
+	Defaults:
+		Tick: 80
+	stand:
+		Facings: 8
+	panic-stand:
+		Start: 8
+		Length: 1
+		Stride: 6
+		Facings: 8
+	panic-run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	run:
+		Start: 56
+		Length: 6
+		Facings: 8
+	shoot:
+		Start: 205
+		Length: 4
+		Facings: 8
+	idle1:
+		Start: 189
+		Length: 11
+	draw-pistol:
+		Start: 200
+		Length: 5
+	beg-for-mercy:
+		Start: 237
+		Length: 31
+	executed:
+		Start: 277
+		Length: 6
+	die1:
+		Start: 329
+		Length: 8
+	die2:
+		Start: 337
+		Length: 8
+	die3:
+		Start: 337
+		Length: 8
+	die4:
+		Start: 345
+		Length: 12
+	die5:
+		Start: 357
+		Length: 18
+	die6:
+		Start: 182
+		Length: 4
+	die-crushed: e1rot
+		Start: 16
+		Length: 4
+		Tick: 1600
+
+c5:
+	Defaults:
+		Tick: 80
+	stand:
+		Facings: 8
+	panic-stand:
+		Start: 8
+		Length: 1
+		Stride: 6
+		Facings: 8
+	panic-run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	run:
+		Start: 56
+		Length: 6
+		Facings: 8
+	shoot:
+		Start: 205
+		Length: 4
+		Facings: 8
+	idle1:
+		Start: 189
+		Length: 11
+	draw-pistol:
+		Start: 200
+		Length: 5
+	beg-for-mercy:
+		Start: 237
+		Length: 31
+	executed:
+		Start: 277
+		Length: 6
+	die1:
+		Start: 329
+		Length: 8
+	die2:
+		Start: 337
+		Length: 8
+	die3:
+		Start: 337
+		Length: 8
+	die4:
+		Start: 345
+		Length: 12
+	die5:
+		Start: 357
+		Length: 18
+	die6:
+		Start: 182
+		Length: 4
+	die-crushed: e1rot
+		Start: 16
+		Length: 4
+		Tick: 1600
+
+c6:
+	Defaults:
+		Tick: 80
+	stand:
+		Facings: 8
+	panic-stand:
+		Start: 8
+		Length: 1
+		Stride: 6
+		Facings: 8
+	panic-run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	run:
+		Start: 56
+		Length: 6
+		Facings: 8
+	shoot:
+		Start: 205
+		Length: 4
+		Facings: 8
+	idle1:
+		Start: 189
+		Length: 11
+	draw-pistol:
+		Start: 200
+		Length: 5
+	beg-for-mercy:
+		Start: 237
+		Length: 31
+	executed:
+		Start: 277
+		Length: 6
+	die1:
+		Start: 329
+		Length: 8
+	die2:
+		Start: 337
+		Length: 8
+	die3:
+		Start: 337
+		Length: 8
+	die4:
+		Start: 345
+		Length: 12
+	die5:
+		Start: 357
+		Length: 18
+	die6:
+		Start: 182
+		Length: 4
+	die-crushed: e1rot
+		Start: 16
+		Length: 4
+		Tick: 1600
+
+c7:
+	Defaults:
+		Tick: 80
+	stand:
+		Facings: 8
+	panic-stand:
+		Start: 8
+		Length: 1
+		Stride: 6
+		Facings: 8
+	panic-run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	run:
+		Start: 56
+		Length: 6
+		Facings: 8
+	shoot:
+		Start: 205
+		Length: 4
+		Facings: 8
+	idle1:
+		Start: 189
+		Length: 11
+	draw-pistol:
+		Start: 200
+		Length: 5
+	beg-for-mercy:
+		Start: 237
+		Length: 31
+	executed:
+		Start: 277
+		Length: 6
+	die1:
+		Start: 329
+		Length: 8
+	die2:
+		Start: 337
+		Length: 8
+	die3:
+		Start: 337
+		Length: 8
+	die4:
+		Start: 345
+		Length: 12
+	die5:
+		Start: 357
+		Length: 18
+	die6:
+		Start: 182
+		Length: 4
+	die-crushed: e1rot
+		Start: 16
+		Length: 4
+		Tick: 1600
+
+c8:
+	Defaults:
+		Tick: 80
+	stand:
+		Facings: 8
+	panic-stand:
+		Start: 8
+		Length: 1
+		Stride: 6
+		Facings: 8
+	panic-run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	run:
+		Start: 56
+		Length: 6
+		Facings: 8
+	shoot:
+		Start: 205
+		Length: 4
+		Facings: 8
+	idle1:
+		Start: 189
+		Length: 11
+	draw-pistol:
+		Start: 200
+		Length: 5
+	beg-for-mercy:
+		Start: 237
+		Length: 31
+	executed:
+		Start: 277
+		Length: 6
+	die1:
+		Start: 329
+		Length: 8
+	die2:
+		Start: 337
+		Length: 8
+	die3:
+		Start: 337
+		Length: 8
+	die4:
+		Start: 345
+		Length: 12
+	die5:
+		Start: 357
+		Length: 18
+	die6:
+		Start: 182
+		Length: 4
+	die-crushed: e1rot
+		Start: 16
+		Length: 4
+		Tick: 1600
+
+c9:
+	Defaults:
+		Tick: 80
+	stand:
+		Facings: 8
+	panic-stand:
+		Start: 8
+		Length: 1
+		Stride: 6
+		Facings: 8
+	panic-run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	run:
+		Start: 56
+		Length: 6
+		Facings: 8
+	shoot:
+		Start: 205
+		Length: 4
+		Facings: 8
+	idle1:
+		Start: 189
+		Length: 11
+	draw-pistol:
+		Start: 200
+		Length: 5
+	beg-for-mercy:
+		Start: 237
+		Length: 31
+	executed:
+		Start: 277
+		Length: 6
+	die1:
+		Start: 329
+		Length: 8
+	die2:
+		Start: 337
+		Length: 8
+	die3:
+		Start: 337
+		Length: 8
+	die4:
+		Start: 345
+		Length: 12
+	die5:
+		Start: 357
+		Length: 18
+	die6:
+		Start: 182
+		Length: 4
+	die-crushed: e1rot
+		Start: 16
+		Length: 4
+		Tick: 1600
+
+c10:
+	Defaults:
+		Tick: 80
+	stand:
+		Facings: 8
+	panic-stand:
+		Start: 8
+		Length: 1
+		Stride: 6
+		Facings: 8
+	panic-run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	run:
+		Start: 56
+		Length: 6
+		Facings: 8
+	shoot:
+		Start: 205
+		Length: 4
+		Facings: 8
+	idle1:
+		Start: 189
+		Length: 11
+	draw-pistol:
+		Start: 200
+		Length: 5
+	beg-for-mercy:
+		Start: 237
+		Length: 31
+	executed:
+		Start: 277
+		Length: 6
+	die1:
+		Start: 329
+		Length: 8
+	die2:
+		Start: 337
+		Length: 8
+	die3:
+		Start: 337
+		Length: 8
+	die4:
+		Start: 345
+		Length: 12
+	die5:
+		Start: 357
+		Length: 18
+	die6:
+		Start: 182
+		Length: 4
+	die-crushed: e1rot
+		Start: 16
+		Length: 4
+		Tick: 1600
+
+moebius:
+	Defaults:
+		Tick: 80
+	stand:
+		Facings: 8
+	panic-stand:
+		Start: 8
+		Length: 1
+		Stride: 6
+		Facings: 8
+	panic-run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	run:
+		Start: 56
+		Length: 6
+		Facings: 8
+	idle1:
+		Start: 104
+		Length: 15
+	beg-for-mercy:
+		Start: 120
+		Length: 32
+	executed:
+		Start: 160
+		Length: 6
+	die1:
+		Start: 212
+		Length: 8
+	die2:
+		Start: 220
+		Length: 8
+	die3:
+		Start: 220
+		Length: 8
+	die4:
+		Start: 228
+		Length: 12
+	die5:
+		Start: 240
+		Length: 17
+	die6:
+		Start: 214
+		Length: 3
+	die-crushed: e1rot
+		Start: 16
+		Length: 4
+		Tick: 1600
+
+chan:
+	Defaults:
+		Tick: 80
+	stand:
+		Facings: 8
+	panic-stand:
+		Start: 8
+		Length: 1
+		Stride: 6
+		Facings: 8
+	panic-run:
+		Start: 8
+		Length: 6
+		Facings: 8
+	run:
+		Start: 56
+		Length: 6
+		Facings: 8
+	idle1:
+		Start: 104
+		Length: 15
+	beg-for-mercy:
+		Start: 120
+		Length: 32
+	executed:
+		Start: 160
+		Length: 6
+	die1:
+		Start: 212
+		Length: 8
+	die2:
+		Start: 220
+		Length: 8
+	die3:
+		Start: 220
+		Length: 8
+	die4:
+		Start: 228
+		Length: 12
+	die5:
+		Start: 240
+		Length: 17
+	die6:
+		Start: 214
+		Length: 3
+	die-crushed: e1rot
+		Start: 16
+		Length: 4
+		Tick: 1600
