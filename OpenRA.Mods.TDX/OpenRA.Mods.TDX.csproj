@@ -54,7 +54,7 @@
     </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="Eluant">
-      <HintPath>..\thirdparty\Eluant.dll</HintPath>
+      <HintPath>..\thirdparty\download\Eluant.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
@@ -71,12 +71,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Effects\BallisticMissile.cs" />
-    <Compile Include="Traits\RenderInfantryEditor.cs" />
-    <Compile Include="Traits\RenderUnitFlying.cs" />
-    <Compile Include="Traits\WithTurretReload.cs" />
-    <Compile Include="Traits\WithIdleOverlayTDX.cs" />
+    <Compile Include="Effects\MissileX.cs" />
+    <Compile Include="Traits\UpgradeOnDamage.cs" />
     <Compile Include="Traits\WorldPaletteEffect.cs" />
+    <Compile Include="Traits\IdleWander.cs" />
+    <Compile Include="Warheads\CreateEffectXWarhead.cs" />
+    <Compile Include="Warheads\LeaveSmudgeXWarhead.cs" />
+    <Compile Include="Warheads\SpreadDamageXWarhead.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
