@@ -5,6 +5,8 @@ GenericVoice:
 	Voices:
 		Select: await1,ready,report1,yessir1
 		Move: ackno,affirm1,noprob,ritaway,roger,ugotit
+		Action: ackno,affirm1,noprob,ritaway,roger,ugotit
+		Attack: ackno,affirm1,noprob,ritaway,roger,ugotit
 		Die: nuyell1,nuyell4,nuyell5,nuyell6
 		Burned: yell1
 		Zapped: nuyell3
@@ -18,11 +20,14 @@ VehicleVoice:
 	Voices:
 		Select: vehic1,yessir1,report1,await1,unit1
 		Move: ackno,affirm1,movout1
+		Action: ackno,affirm1,movout1
+		Attack: ackno,affirm1,movout1
 
 CivilianMaleVoice:
 	Voices:
 		Select: guyyeah1
 		Move: guyokay1
+		Action: guyokay1
 		Die: nuyell1,nuyell4,nuyell5,nuyell6
 		Burned: yell1
 		Zapped: nuyell3
@@ -32,6 +37,7 @@ CivilianFemaleVoice:
 	Voices:
 		Select: girlyeah
 		Move: girlokay
+		Action: girlokay
 		Die: nuyell1,nuyell4,nuyell5,nuyell6
 		Burned: yell1
 		Zapped: nuyell3
@@ -41,6 +47,7 @@ MoebiusVoice:
 	Voices:
 		Select: mcomnd1,mhello1,myes1,mhmmm1,mthanks1
 		Move: myesyes1,mplan3,mtiber1,mcourse1
+		Action: myesyes1,mplan3,mtiber1,mcourse1
 		Die: nuyell1,nuyell4,nuyell5,nuyell6
 		Burned: yell1
 		Zapped: nuyell3
@@ -50,6 +57,7 @@ MedicVoice:
 	Voices:
 		Select: mrespon1,myessir1
 		Move: maffirm1,mmovout1
+		Action: maffirm1,mmovout1
 		Die: nuyell1,nuyell4,nuyell5,nuyell6
 		Burned: yell1
 		Zapped: nuyell3
@@ -59,6 +67,7 @@ CommandoVoice:
 	Voices:
 		Select: yeah1,yes1,yo1
 		Move: cmon1,onit1,gotit1
+		Action: onit1,gotit1,noprblm1
 		Attack: onit1,gotit1,noprblm1
 		Demolish: bombit1
 		Die: ramyell1
@@ -72,6 +81,7 @@ DinoVoice:
 	Voices:
 		Select: dinoyes
 		Move: dinomout
+		Action: dinomout
 		Attack: dinoatk1
 		Die: dinodie1
 		Burned: dinodie1

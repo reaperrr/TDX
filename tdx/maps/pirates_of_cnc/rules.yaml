@@ -1,0 +1,4 @@
+World:
+	WorldPaletteEffect:
+		DayNightCycle: false
+		InitialEffect: Evening

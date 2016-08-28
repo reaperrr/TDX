@@ -11,10 +11,12 @@ E1:
 	Mobile:
 		Speed: 56
 	Health:
-		HP: 50
+		HP: 500
 	Armament:
 		Weapon: M16
 	AttackFrontal:
+	WithInfantryBody:
+		AttackSequence: shoot
 
 E2:
 	Inherits: ^Infantry
@@ -24,18 +26,20 @@ E2:
 		Name: Grenadier
 		Description: Fast infantry armed with grenades. \n  Strong vs Buildings, slow-moving targets
 	Buildable:
-		BuildPaletteOrder: 40
+		BuildPaletteOrder: 20
 		Prerequisites: pyle, ~infantry.gdi, ~techlevel.medium
 		Queue: Infantry
 	Mobile:
 		Speed: 71
 	Health:
-		HP: 50
+		HP: 500
 	Armament:
 		Weapon: Grenade
 		LocalOffset: 0,0,427
 		FireDelay: 15
 	AttackFrontal:
+	WithInfantryBody:
+		AttackSequence: shoot
 	Explodes:
 		Weapon: GrenadierExplode
 		EmptyWeapon: GrenadierExplode
@@ -49,14 +53,12 @@ E3:
 		Name: Rocket Soldier
 		Description: Anti-tank/Anti-aircraft infantry. \n  Strong vs Tanks, Aircraft\n  Weak vs Infantry
 	Buildable:
-		BuildPaletteOrder: 20
+		BuildPaletteOrder: 30
 		Queue: Infantry
-	Selectable:
-		Bounds: 12,17,0,-6
 	Mobile:
 		Speed: 42
 	Health:
-		HP: 45
+		HP: 400
 	AutoTarget:
 		ScanRadius: 6
 	Armament:
@@ -64,6 +66,8 @@ E3:
 		LocalOffset: 256,43,341
 		FireDelay: 5
 	AttackFrontal:
+	WithInfantryBody:
+		AttackSequence: shoot
 
 E4:
 	Inherits: ^Infantry
@@ -73,21 +77,24 @@ E4:
 		Name: Flamethrower
 		Description: Advanced Anti-infantry unit.\n  Strong vs Infantry, Buildings\n  Weak vs Tanks
 	Buildable:
-		BuildPaletteOrder: 40
+		BuildPaletteOrder: 21
 		Prerequisites: hand, ~infantry.nod, ~techlevel.medium
 		Queue: Infantry
 	Mobile:
-		Speed: 56
+		Speed: 71
 	Health:
-		HP: 90
+		HP: 700
 	Armament:
 		Weapon: Flamethrower
 		LocalOffset: 341,0,256
 		FireDelay: 3
 		MuzzleSequence: muzzle
 		MuzzleSplitFacings: 8
+		MuzzlePalette: flashyeffect
 	AttackFrontal:
-	WithMuzzleFlash:
+	WithInfantryBody:
+		AttackSequence: shoot
+	WithMuzzleOverlay:
 		SplitFacings: true
 
 E5:
@@ -109,7 +116,7 @@ E5:
 			BlueTiberium: 90
 				PathingCost: 90
 	Health:
-		HP: 90
+		HP: 900
 	Armament:
 		Weapon: Chemspray
 		LocalOffset: 341,0,256
@@ -117,7 +124,9 @@ E5:
 		MuzzleSequence: muzzle
 		MuzzleSplitFacings: 8
 	AttackFrontal:
-	WithMuzzleFlash:
+	WithInfantryBody:
+		AttackSequence: shoot
+	WithMuzzleOverlay:
 		SplitFacings: true
 	-PoisonedByTiberium:
 
@@ -129,12 +138,12 @@ E6:
 		Name: Engineer
 		Description: Infiltrates and captures enemy structures.\n  Strong vs Nothing\n  Weak vs Everything
 	Buildable:
-		BuildPaletteOrder: 30
+		BuildPaletteOrder: 45
 		Queue: Infantry
 	Mobile:
 		Speed: 56
 	Health:
-		HP: 25
+		HP: 250
 	Passenger:
 		PipType: Yellow
 	EngineerRepair:
@@ -147,12 +156,12 @@ E6:
 MEDI:
 	Inherits: ^Infantry
 	Valued:
-		Cost: 400
+		Cost: 250
 	Tooltip:
 		Name: Medic
 		Description: Heals nearby infantry.\n  Strong vs Nothing\n  Weak vs Everything
 	Buildable:
-		BuildPaletteOrder: 35
+		BuildPaletteOrder: 44
 		Prerequisites: pyle, ~infantry.gdi, ~techlevel.medium
 		Queue: Infantry
 	Selectable:
@@ -160,23 +169,28 @@ MEDI:
 	Mobile:
 		Speed: 56
 	Health:
-		HP: 60
-	Armament:
-		Weapon: MedicHeal
-	AttackMedic:
-		Cursor: heal
-		OutsideRangeCursor: heal
+		HP: 600
+#	Armament:
+#		Weapon: MedicHeal
+#		Cursor: heal
+#		OutsideRangeCursor: heal
+#		TargetStances: Ally
+#		ForceTargetStances: None
+#	AttackFrontal:
 	WithRangeCircle:
-		Range: 3c0
+		Range: 2c0
 		Type: medicheal
 	UpgradeActorsNear:
 		Upgrades: medicheal
-		Range: 3c0
+		Range: 2c0
 		AffectsParent: true
 	Passenger:
 		PipType: Blue
 	-AutoTarget:
 	TakeCover:
+		DamageModifiers:
+			Prone50Percent: 50
+		DamageTriggers: TriggerProne
 	WithInfantryBody:
 		AttackSequence: heal
 	-GainsExperience:
@@ -189,15 +203,14 @@ RMBO:
 		Name: Commando
 		Description: Elite sniper infantry unit.\n  Strong vs Infantry, Buildings\n  Weak vs Vehicles
 	Buildable:
-		BuildPaletteOrder: 50
+		BuildPaletteOrder: 55
 		Prerequisites: eye, ~infantry.gdi, ~techlevel.high
 		Queue: Infantry
 	Selectable:
-		Voice: CommandoVoice
 	Mobile:
 		Speed: 71
 	Health:
-		HP: 200
+		HP: 1250
 	Passenger:
 		PipType: Red
 	RevealsShroud:
@@ -210,10 +223,16 @@ RMBO:
 		Weapon: Sniper
 	AttackFrontal:
 	TakeCover:
+		DamageModifiers:
+			Prone50Percent: 50
+		DamageTriggers: TriggerProne
 	WithInfantryBody:
 		IdleSequences: idle1,idle2,idle3
+		AttackSequence: shoot
 	AnnounceOnBuild:
 	AnnounceOnKill:
+	Voiced:
+		VoiceSet: CommandoVoice
 
 PVICE:
 	Inherits: VICE
@@ -222,7 +241,7 @@ PVICE:
 		Crushes: crate
 	Buildable:
 		Queue: Biolab
-		BuildPaletteOrder: 40
+		BuildPaletteOrder: 60
 	Tooltip:
 		Description: Mutated abomination that spits liquid tiberium.\n  Strong vs Infantry, Buildings\n  Weak vs Aircraft
 	DrawLineToTarget:
@@ -243,7 +262,7 @@ STEG:
 TREX:
 	Inherits: ^DINO
 	Tooltip:
-		Name: Tyrannosaurus rex
+		Name: Tyrannosaurus Rex
 		Description: Bipedal carnivore with a massive skull
 	Armament:
 		Weapon: teeth

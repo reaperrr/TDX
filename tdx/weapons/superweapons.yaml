@@ -1,104 +1,76 @@
 Atomic:
 	ValidTargets: Ground, Air
 	Report: nukemisl.aud
-	Warhead@1Dam_impact: SpreadDamage
-#		Spread: 1c0
-		Range: 0, 1c1, 2c1, 3c1, 4c1, 5c1, 5c512
-		Damage: 150
-		Falloff: 1000, 1000, 480, 240, 120, 60, 0
-		DeathType: 5
+	Warhead@1Dam_impact: SpreadDamageX
+		Range: 0, 1c1, 2c1, 3c1, 4c1, 5c1, 6c0
+		Damage: 7500
+		Falloff: 100, 100, 80, 60, 40, 20, 0
 		ValidTargets: Ground, Air
 		Versus:
-			None: 100
-			Wood: 100
-			Light: 60
-			Heavy: 50
-	Warhead@2Eff_impact: CreateEffect
-		Explosion: nuke_explosion
-		ImpactSound: nukexplo.aud
+			Steel: 80
+			Concrete: 60
+			Light: 75
+			Medium: 40
+			Heavy: 25
+		DamageTypes: Prone50Percent, TriggerProne, FireDeath
+	Warhead@2Eff_impact: CreateEffectX
+		Explosions: nuke_explosion
+		ImpactSounds: nukexplo.aud
 		ExplosionPalette: flashyeffect
-	Warhead@3Dam_areanukea: SpreadDamage
-#		Spread: 2c512
-		Range: 1c0, 2c1, 3c1, 4c1, 5c1, 6c0
-		Damage: 50
-		Falloff: 1000, 480, 240, 120, 60, 0
-		DeathType: 5
+#	Warhead@7Eff_impact: CreateEffectX
+#		Explosions: nukeflash
+#		ExplosionPalette: alpha
+#		Delay: 2
+	Warhead@3Dam_areanukea: SpreadDamageX
+		Range: 0, 1c1, 2c1, 3c1, 4c1, 5c1, 6c0
+		Damage: 5000
+		Falloff: 100, 100, 80, 60, 40, 20, 0
 		Delay: 3
 		ValidTargets: Ground, Air
 		Versus:
-			None: 100
-			Wood: 100
-			Light: 60
-			Heavy: 40
+			Steel: 80
+			Concrete: 60
+			Light: 75
+			Medium: 40
+			Heavy: 25
+		DamageTypes: Prone50Percent, TriggerProne, FireDeath
 	Warhead@4Res_areanukea: DestroyResource
-		Size: 3
+		Size: 6
 		Delay: 3
-	Warhead@5Smu_areanukea: LeaveSmudge
+	Warhead@5Smu_areanukea: LeaveSmudgeX
 		SmudgeType: Scorch
-		Size: 3
+		InvalidTargets: TibTree, Rock
+		Size: 6
 		Delay: 3
-	Warhead@6Eff_areanukea: CreateEffect
-		ImpactSound: xplobig4.aud
+	Warhead@6Eff_areanukea: CreateEffectX
+		ImpactSounds: xplobig4.aud
 		Delay: 3
-	Warhead@7Dam_areanukeb: SpreadDamage
-#		Spread: 3c768
-		Range: 2c0, 3c1, 4c1, 5c1, 6c0
-		Damage: 30
-		Falloff: 1000, 480, 240, 120, 60
-		DeathType: 5
-		Delay: 6
-		ValidTargets: Ground, Air
-		Versus:
-			None: 100
-			Wood: 100
-			Light: 60
-			Heavy: 30
-	Warhead@8Res_areanukeb: DestroyResource
-		Size: 4
-		Delay: 6
-	Warhead@9Smu_areanukeb: LeaveSmudge
-		SmudgeType: Scorch
-		Size: 4
-		Delay: 6
-	Warhead@10Dam_areanukec: SpreadDamage
-#		Spread: 5c0
-		Range: 3c0, 4c1, 5c1, 6c0
-		Damage: 20
-		Falloff: 1000, 480, 240, 120
-		DeathType: 5
-		Delay: 9
-		ValidTargets: Ground, Air
-		Versus:
-			None: 100
-			Wood: 100
-			Light: 60
-			Heavy: 20
-	Warhead@11Res_areanukec: DestroyResource
-		Size: 5
-		Delay: 9
-	Warhead@12Smu_areanukec: LeaveSmudge
-		SmudgeType: Scorch
-		Size: 5
-		Delay: 9
 
 IonCannon:
 	ValidTargets: Ground, Air
-	Warhead@1Dam_impact: SpreadDamage
+	Warhead@1Dam_impact: SpreadDamageX
 		Range: 0, 1c1, 2c1, 2c512
-		Damage: 100
-		Falloff: 1000, 1000, 250, 100
-		DeathType: 5
+		Damage: 9000
+		Falloff: 100, 100, 25, 10
 		ValidTargets: Ground, Air
-	Warhead@2Smu_impact: LeaveSmudge
+		DamageTypes: Prone50Percent, TriggerProne, FireDeath
+	Warhead@2Smu_impact: LeaveSmudgeX
 		SmudgeType: Scorch
-	Warhead@3Smu_area: LeaveSmudge
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Tree, TibTree, Rock
+	Warhead@3Smu_area: LeaveSmudgeX
 		SmudgeType: Scorch
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Tree, TibTree, Rock
 		Size: 1
 		Delay: 3
 	Warhead@4Res_area2: DestroyResource
 		Size: 2
 		Delay: 6
-	Warhead@5Smu_area2: LeaveSmudge
+	Warhead@5Smu_area2: LeaveSmudgeX
 		SmudgeType: Scorch
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Tree, TibTree, Rock
 		Size: 2,1
 		Delay: 6
+	Warhead@6Eff_impact: CreateEffectX
+		Explosions: ionflash
+		ExplosionPalette: alpha
+		Delay: 1

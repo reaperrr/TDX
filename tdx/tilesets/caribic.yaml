@@ -2,61 +2,62 @@ General:
 	Name: Caribic
 	Id: CARIBIC
 	Palette: caribic.pal
-	WaterPaletteRotationBase: 32
 	EditorTemplateOrder: Terrain, Debris, Road, Cliffs, Beach, River, Bridge
+	HeightDebugColors: 880000
 
 Terrain:
 	TerrainType@Beach:
 		Type: Beach
 		TargetTypes: Ground
-		Color: 255,224,188,120
+		Color: E0BC78
 	TerrainType@BlueTiberium:
 		Type: BlueTiberium
 		TargetTypes: Ground
 		AcceptsSmudgeType: Crater, Scorch
-		Color: 255,84,252,252
+		Color: 54FFFF
 	TerrainType@Clear:
 		Type: Clear
 		TargetTypes: Ground
 		AcceptsSmudgeType: Crater, Scorch
-		Color: 255,60,128,48
+		Color: 3C803C
 	TerrainType@River:
 		Type: River
 		TargetTypes: Ground
-		Color: 255,92,140,180
+		Color: 608BB4
 	TerrainType@Road:
 		Type: Road
 		TargetTypes: Ground
 		AcceptsSmudgeType: Crater, Scorch
-		Color: 255,144,96,64
+		Color: 906040
 	TerrainType@Rock:
 		Type: Rock
 		TargetTypes: Ground
-		Color: 255,112,76,52
+		Color: 705434
 	TerrainType@Rough:
 		Type: Rough
 		TargetTypes: Ground
 		AcceptsSmudgeType: Crater, Scorch
-		Color: 255,92,80,64
+		Color: 5C5040
 	TerrainType@Tiberium:
 		Type: Tiberium
 		TargetTypes: Ground
 		AcceptsSmudgeType: Crater, Scorch
-		Color: 255,161,226,28
+		Color: A1E21C
 	TerrainType@Tree:
 		Type: Tree
 		TargetTypes: Ground
-		Color: 255,28,92,36
+		Color: 1C5C24
 	TerrainType@Wall:
 		Type: Wall
 		TargetTypes: Ground
 		AcceptsSmudgeType: Crater, Scorch
-		Color: 255,208,192,160
+		Color: D0C0A0
 	TerrainType@Water:
 		Type: Water
 		TargetTypes: Water
 		IsWater: True
-		Color: 255,92,116,164
+		Color: 5DA5CE
+		RestrictPlayerColor: true
 
 Templates:
 	Template@255:
@@ -153,9 +154,9 @@ Templates:
 			0: Clear
 			1: Clear
 			2: Clear
-			3: River
-			4: Clear
-			5: Clear
+			3: Beach
+			4: Beach
+			5: Beach
 			6: Water
 			7: Water
 			8: Water
@@ -198,9 +199,9 @@ Templates:
 			0: Clear
 			1: Clear
 			2: Clear
-			3: River
-			4: River
-			5: Clear
+			3: Beach
+			4: Beach
+			5: Beach
 			6: Water
 			7: Water
 			8: Water
@@ -213,7 +214,7 @@ Templates:
 			0: Clear
 			1: River
 			2: Rock
-			3: Clear
+			3: Beach
 			4: River
 			5: River
 			6: Water
@@ -229,8 +230,8 @@ Templates:
 			1: Water
 			2: Water
 			3: Rock
-			4: Clear
-			5: Clear
+			4: Rock
+			5: Beach
 			6: Tree
 			7: Tree
 			8: Clear
@@ -243,12 +244,12 @@ Templates:
 			0: Water
 			1: Water
 			2: Water
-			3: Water
-			4: Clear
+			3: Beach
+			4: Rock
 			5: Rock
 			6: Clear
 			7: Rock
-			8: Road
+			8: Clear
 	Template@11:
 		Id: 11
 		Images: sh14.car
@@ -263,7 +264,7 @@ Templates:
 			5: River
 			6: Clear
 			7: Clear
-			8: Tree
+			8: Rock
 	Template@12:
 		Id: 12
 		Images: sh15.car
@@ -272,12 +273,12 @@ Templates:
 		Tiles:
 			1: River
 			2: River
-			3: River
+			3: Beach
 			4: Rock
 			5: Rock
 			6: Clear
 			7: Tree
-			8: Clear
+			8: Tree
 	Template@13:
 		Id: 13
 		Images: s01.car
@@ -286,7 +287,7 @@ Templates:
 		Tiles:
 			0: Rock
 			1: Rock
-			2: Clear
+			2: Rock
 			3: Rock
 	Template@14:
 		Id: 14
@@ -358,7 +359,7 @@ Templates:
 		Category: Cliffs
 		Tiles:
 			0: Rock
-			1: Clear
+			1: Rock
 			2: Rock
 			3: Rock
 	Template@21:
@@ -370,7 +371,7 @@ Templates:
 			0: Rock
 			1: Rock
 			2: Rock
-			3: Clear
+			3: Rock
 			4: Rock
 			5: Rock
 	Template@22:
@@ -409,9 +410,9 @@ Templates:
 		Size: 3,2
 		Category: Cliffs
 		Tiles:
-			0: Clear
+			0: Rock
 			1: Rock
-			2: Clear
+			2: Rock
 			3: Rock
 			4: Rock
 			5: Clear
@@ -422,8 +423,8 @@ Templates:
 		Category: Cliffs
 		Tiles:
 			0: Rock
-			1: Clear
-			2: Clear
+			1: Rock
+			2: Rock
 	Template@27:
 		Id: 27
 		Images: s15.car
@@ -431,7 +432,7 @@ Templates:
 		Category: Cliffs
 		Tiles:
 			0: Rock
-			1: Clear
+			1: Rock
 			2: Rock
 			3: Rock
 	Template@28:
@@ -440,7 +441,7 @@ Templates:
 		Size: 2,3
 		Category: Cliffs
 		Tiles:
-			0: Clear
+			0: Rock
 			2: Rock
 			3: Rock
 			5: Rock
@@ -450,8 +451,8 @@ Templates:
 		Size: 2,2
 		Category: Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
+			0: Rock
+			1: Rock
 			2: Rock
 			3: Rock
 	Template@30:
@@ -460,8 +461,8 @@ Templates:
 		Size: 2,2
 		Category: Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
+			0: Rock
+			1: Rock
 			2: Rock
 			3: Rock
 	Template@31:
@@ -470,8 +471,8 @@ Templates:
 		Size: 2,2
 		Category: Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
+			0: Rock
+			1: Rock
 			2: Rock
 			3: Rock
 	Template@32:
@@ -480,11 +481,11 @@ Templates:
 		Size: 2,3
 		Category: Cliffs
 		Tiles:
-			1: Clear
+			1: Rock
 			2: Rock
 			3: Rock
 			4: Rock
-			5: Clear
+			5: Rough
 	Template@33:
 		Id: 33
 		Images: s21.car
@@ -507,12 +508,12 @@ Templates:
 		Size: 3,2
 		Category: Cliffs
 		Tiles:
-			0: Clear
+			0: Rough
 			1: Rock
 			2: Rock
 			3: Rock
 			4: Rock
-			5: Clear
+			5: Rough
 	Template@36:
 		Id: 36
 		Images: s24.car
@@ -551,8 +552,8 @@ Templates:
 		Tiles:
 			0: Rock
 			1: Rock
-			2: Clear
-			3: Clear
+			2: Rough
+			3: Rough
 			4: Rock
 			5: Rock
 	Template@40:
@@ -581,7 +582,7 @@ Templates:
 		Category: Cliffs
 		Tiles:
 			0: Rock
-			1: Clear
+			1: Rock
 			2: Rock
 			3: Rock
 	Template@43:
@@ -590,8 +591,8 @@ Templates:
 		Size: 2,2
 		Category: Cliffs
 		Tiles:
-			0: Clear
-			1: Clear
+			0: Rock
+			1: Rock
 			2: Rock
 			3: Rock
 	Template@44:
@@ -642,7 +643,7 @@ Templates:
 			0: Rock
 			1: Rock
 			2: Rock
-			3: Rock
+			3: Rough
 	Template@49:
 		Id: 49
 		Images: s37.car
@@ -670,10 +671,10 @@ Templates:
 		Category: Beach
 		Tiles:
 			0: Water
-			1: Clear
+			1: Beach
 			2: Clear
-			3: River
-			4: Clear
+			3: Beach
+			4: Beach
 			5: Clear
 			6: Clear
 			7: Clear
@@ -685,11 +686,11 @@ Templates:
 		Category: Beach
 		Tiles:
 			0: Clear
-			1: Clear
-			2: River
+			1: Beach
+			2: Water
 			3: Clear
 			4: Clear
-			5: Clear
+			5: Beach
 			6: Clear
 			7: Clear
 			8: Clear
@@ -789,7 +790,7 @@ Templates:
 			1: Wall
 			2: Wall
 			3: Wall
-			4: Clear
+			4: Rough
 			5: Wall
 	Template@80:
 		Id: 80
@@ -822,7 +823,7 @@ Templates:
 		Tiles:
 			0: Rock
 			1: Rock
-			2: Clear
+			2: Rock
 	Template@88:
 		Id: 88
 		Images: sh6.car
@@ -832,9 +833,9 @@ Templates:
 			0: Clear
 			1: Clear
 			2: Clear
-			3: Clear
-			4: Clear
-			5: Clear
+			3: Beach
+			4: Beach
+			5: Beach
 			6: Water
 			7: Water
 			8: Water
@@ -844,7 +845,7 @@ Templates:
 		Size: 2,2
 		Category: Beach
 		Tiles:
-			0: Clear
+			0: Beach
 			1: River
 			2: River
 			3: Water
@@ -858,10 +859,10 @@ Templates:
 			1: Clear
 			2: Clear
 			3: Clear
-			4: Clear
+			4: Beach
 			5: River
-			6: Clear
-			7: Clear
+			6: Beach
+			7: Beach
 			8: Water
 	Template@91:
 		Id: 91
@@ -869,15 +870,15 @@ Templates:
 		Size: 3,3
 		Category: Beach
 		Tiles:
-			0: Clear
+			0: Beach
 			1: Clear
 			2: Clear
 			3: River
-			4: Clear
+			4: Beach
 			5: Clear
 			6: Water
 			7: River
-			8: Clear
+			8: Beach
 	Template@92:
 		Id: 92
 		Images: sh10.car
@@ -885,7 +886,7 @@ Templates:
 		Category: Beach
 		Tiles:
 			0: River
-			1: Clear
+			1: Beach
 			2: Water
 			3: River
 	Template@93:
@@ -1711,14 +1712,14 @@ Templates:
 		Size: 3,3
 		Category: Beach
 		Tiles:
-			0: Clear
-			1: Clear
+			0: Beach
+			1: Beach
 			2: Water
-			3: Clear
-			4: Clear
+			3: Beach
+			4: Beach
 			5: Water
-			6: Clear
-			7: Clear
+			6: Beach
+			7: Beach
 			8: Water
 	Template@187:
 		Id: 187
@@ -1727,14 +1728,14 @@ Templates:
 		Category: Beach
 		Tiles:
 			0: Water
-			1: River
-			2: Clear
+			1: Water
+			2: Beach
 			3: Water
-			4: River
+			4: Water
 			5: Clear
 			6: Water
-			7: Clear
-			8: Clear
+			7: Beach
+			8: Beach
 	Template@256:
 		Id: 256
 		Images: sh46.car
@@ -1744,15 +1745,15 @@ Templates:
 			0: Water
 			1: River
 			2: River
-			3: Clear
+			3: Beach
 	Template@257:
 		Id: 257
 		Images: sh48.car
 		Size: 2,2
 		Category: Beach
 		Tiles:
-			0: Water
+			0: River
 			1: Water
-			2: Clear
+			2: Beach
 			3: River
 

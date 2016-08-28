@@ -1,0 +1,177 @@
+Sniper:
+	Report: silencer.aud
+	ValidTargets: Infantry
+	ReloadDelay: 40
+	Range: 6c0
+	Projectile: Bullet
+		Speed: 1c682
+	Warhead@1Dam: SpreadDamageX
+		Spread: 43
+		Falloff: 100, 50, 0
+		Damage: 1000
+		ValidTargets: Infantry
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+
+HighV:
+	ReloadDelay: 50
+	Range: 6c0
+	Report: mgunhvy1.aud
+	Projectile: Bullet
+		Speed: 1c682
+	Warhead@1Dam: SpreadDamageX
+		Spread: 384
+		Falloff: 100, 50, 25, 0
+		Damage: 300
+		Versus:
+			Light: 75
+			Medium: 50
+			Heavy: 25
+			Wood: 40
+			Steel: 35
+			Concrete: 30
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffectX
+		Explosions: piffs
+	Warhead@3Eff: CreateEffectX
+		Delay: 2
+		Explosions: piffs
+
+HeliAGGun:
+	ReloadDelay: 20
+	Burst: 2
+	BurstDelay: 0
+	MinRange: 0c640
+	Range: 4c0
+	Report: mgunhvy2.aud
+	Projectile: Bullet
+		Speed: 1c682
+		Blockable: false
+	Warhead@1Dam: SpreadDamageX
+		Spread: 256
+		Falloff: 100, 50, 25, 0
+		Damage: 200
+		Versus:
+			Light: 75
+			Medium: 50
+			Heavy: 30
+			Wood: 75
+			Steel: 50
+			Concrete: 50
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffectX
+		Explosions: piffs
+
+HeliAAGun:
+	ReloadDelay: 20
+	Burst: 2
+	BurstDelay: 5
+	Range: 4c0
+	MinRange: 0c640
+	ValidTargets: Air
+	Report: mgunhvy2.aud
+	Projectile: Bullet
+		Speed: 1c682
+		Blockable: false
+	Warhead@1Dam: SpreadDamageX
+		Spread: 128
+		Falloff: 100, 50, 25, 0
+		Damage: 200
+		ValidTargets: Air
+		Versus:
+			Medium: 75
+			Heavy: 25
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffectX
+		Explosions: piffs
+
+Pistol:
+	ReloadDelay: 7
+	Range: 3c0
+	InvalidTargets: Wall
+	Report: pistol1.aud
+	Projectile: Bullet
+		Speed: 1c682
+	Warhead@1Dam: SpreadDamageX
+		Spread: 43
+		Falloff: 100, 50, 0
+		Damage: 10
+		InvalidTargets: Wall
+		Versus:
+			Light: 5
+			Medium: 5
+			Heavy: 5
+			Wood: 5
+			Steel: 5
+			Concrete: 5
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffectX
+		Explosions: piff
+
+M16:
+	ReloadDelay: 20
+	Range: 4c0
+	InvalidTargets: Wall
+	Report: minigun2.aud
+	Projectile: Bullet
+		Speed: 1c682
+	Warhead@1Dam: SpreadDamageX
+		Spread: 128
+		Falloff: 100, 50, 0
+		Damage: 150
+		InvalidTargets: Wall
+		Versus:
+			Light: 50
+			Medium: 35
+			Heavy: 20
+			Wood: 50
+			Steel: 30
+			Concrete: 15
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffectX
+		Explosions: piff
+
+MachineGun:
+	ReloadDelay: 30
+	Burst: 2
+	InvalidTargets: Wall
+	Range: 4c0
+	Report: mgun11.aud
+	Projectile: Bullet
+		Speed: 1c682
+	Warhead@1Dam: SpreadDamageX
+		Spread: 128
+		Falloff: 100, 50, 25, 0
+		Damage: 150
+		InvalidTargets: Wall
+		Versus:
+			Light: 60
+			Medium: 40
+			Heavy: 25
+			Wood: 50
+			Steel: 35
+			Concrete: 20
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffectX
+		Explosions: piffs
+
+Vulcan:
+	ValidTargets: Ground, Water
+	ReloadDelay: 2
+	Range: 6c0
+	Report: mgun10.aud
+	Projectile: Bullet
+		Speed: 1c682
+	Warhead@1Dam: SpreadDamageX
+		Spread: 341
+		Falloff: 100, 50, 25, 0
+		Damage: 1000
+		ValidTargets: Ground, Water
+		Versus:
+			Medium: 65
+			Heavy: 35
+			Wood: 30
+			Steel: 35
+			Concrete: 25
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffectX
+		Explosions: piffs

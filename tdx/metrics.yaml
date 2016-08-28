@@ -1,0 +1,28 @@
+# General dumping-ground for UI element sizes, etc.
+
+Metrics:
+	ButtonDepth: 1
+	ButtonFont: Regular
+	ButtonTextColor: 33FF00
+	ButtonTextColorDisabled: 808080
+	ButtonTextContrast: false
+	ButtonTextContrastColor: 000000
+	ButtonBaseLine: 0
+	CheckboxPressedState: false
+	HotkeyFont: Regular
+	HotkeyColor: 33FF00
+	HotkeyColorDisabled: 808080
+	TextfieldFont: Regular
+	TextfieldColor: 33FF00
+	TextfieldColorDisabled: 808080
+	TextfieldColorInvalid: 20CC00
+	TextFont: Regular
+	TextColor: 33FF00
+	TextContrast: false
+	TextContrastColor: 000000
+	ColorPickerRemapIndices: 176, 178, 180, 182, 184, 186, 189, 191, 177, 179, 181, 183, 185, 187, 188, 190
+	ColorPickerActorType: ^fact.colorpicker
+	FactionSuffix-gdi: gdi
+	FactionSuffix-nod: nod
+	IncompatibleVersionColor: D3D3D3
+	IncompatibleProtectedGameColor: B22222

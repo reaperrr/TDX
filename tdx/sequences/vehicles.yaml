@@ -1,0 +1,834 @@
+mcv:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	icon: mcvicnh.tem
+		AddExtension: False
+
+mcv.destroyed:
+	idle: mcv
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+
+harv:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	harvest:
+		Start: 32
+		Length: 4
+		Facings: 8
+		Tick: 67
+	dock: harvdump
+		Length: 7
+	dock-loop: harvdump
+		Start: 7
+	icon: harvicnh.tem
+		AddExtension: False
+
+harv.destroyed:
+	idle: harv
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+
+bggy:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+		Offset: 0,-1
+	turret:
+		Start: 32
+		Facings: 32
+		UseClassicFacingFudge: True
+		Offset: 0,-1
+#	muzzle: minigun
+#		Length: 6
+#		Facings: 8
+	muzzle0: minigun
+		Length: 6
+	muzzle1: mgun-nnw
+		Length: *
+	muzzle2: minigun
+		Start: 6
+		Length: 6
+	muzzle3: mgun-wnw
+		Length: *
+	muzzle4: minigun
+		Start: 12
+		Length: 6
+	muzzle5: mgun-wsw
+		Length: *
+	muzzle6: minigun
+		Start: 18
+		Length: 6
+	muzzle7: mgun-ssw
+		Length: *
+	muzzle8: minigun
+		Start: 24
+		Length: 6
+	muzzle9: mgun-sse
+		Length: *
+	muzzle10: minigun
+		Start: 30
+		Length: 6
+	muzzle11: mgun-ese
+		Length: *
+	muzzle12: minigun
+		Start: 36
+		Length: 6
+	muzzle13: mgun-ene
+		Length: *
+	muzzle14: minigun
+		Start: 42
+		Length: 6
+	muzzle15: mgun-nne
+		Length: *
+	icon: bggyicnh.tem
+		AddExtension: False
+
+bggy.destroyed:
+	idle: bggy
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+		Offset: 0,-1
+	turret: bggy
+		Start: 32
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+		Offset: 0,-1
+
+mtnk:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	turret:
+		Start: 32
+		Facings: 32
+		UseClassicFacingFudge: True
+#	muzzle: gunfire2
+#		Length: *
+	muzzle0: cann-n
+		Length: *
+	muzzle1: cann-nnw
+		Length: *
+	muzzle2: cann-nw
+		Length: *
+	muzzle3: cann-nww
+		Length: *
+	muzzle4: cann-w
+		Length: *
+	muzzle5: cann-sww
+		Length: *
+	muzzle6: cann-sw
+		Length: *
+	muzzle7: cann-ssw
+		Length: *
+	muzzle8: cann-s
+		Length: *
+	muzzle9: cann-sse
+		Length: *
+	muzzle10: cann-se
+		Length: *
+	muzzle11: cann-see
+		Length: *
+	muzzle12: cann-e
+		Length: *
+	muzzle13: cann-nee
+		Length: *
+	muzzle14: cann-ne
+		Length: *
+	muzzle15: cann-nne
+		Length: *
+	icon: mtnkicnh.tem
+		AddExtension: False
+
+mtnk.destroyed:
+	idle: mtnk
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+	turret: mtnk
+		Start: 32
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+
+ltnk:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+		Offset: 0,-1
+	turret:
+		Start: 32
+		Facings: 32
+		UseClassicFacingFudge: True
+		Offset: 0,-1
+	muzzle: gunfire2
+		Length: *
+		Offset: 0,-1
+	icon: ltnkicnh.tem
+		AddExtension: False
+
+ltnk.destroyed:
+	idle: ltnk
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+		Offset: 0,-1
+	turret: ltnk
+		Start: 32
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+		Offset: 0,-1
+
+htnk:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	turret:
+		Start: 32
+		Facings: 32
+		UseClassicFacingFudge: True
+	muzzle: gunfire2
+		Length: *
+	icon: htnkicnh.tem
+		AddExtension: False
+
+htnk.destroyed:
+	idle: htnk
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+	turret: htnk
+		Start: 32
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+
+jeep:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	turret:
+		Start: 32
+		Facings: 32
+		UseClassicFacingFudge: True
+#	muzzle: minigun
+#		Length: 6
+#		Facings: 8
+	muzzle0: minigun
+		Length: 6
+	muzzle1: mgun-nnw
+		Length: *
+	muzzle2: minigun
+		Start: 6
+		Length: 6
+	muzzle3: mgun-wnw
+		Length: *
+	muzzle4: minigun
+		Start: 12
+		Length: 6
+	muzzle5: mgun-wsw
+		Length: *
+	muzzle6: minigun
+		Start: 18
+		Length: 6
+	muzzle7: mgun-ssw
+		Length: *
+	muzzle8: minigun
+		Start: 24
+		Length: 6
+	muzzle9: mgun-sse
+		Length: *
+	muzzle10: minigun
+		Start: 30
+		Length: 6
+	muzzle11: mgun-ese
+		Length: *
+	muzzle12: minigun
+		Start: 36
+		Length: 6
+	muzzle13: mgun-ene
+		Length: *
+	muzzle14: minigun
+		Start: 42
+		Length: 6
+	muzzle15: mgun-nne
+		Length: *
+	icon: jeepicnh.tem
+		AddExtension: False
+
+jeep.destroyed:
+	idle: jeep
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+	turret: jeep
+		Start: 32
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+
+bike:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	icon: bikeicnh.tem
+		AddExtension: False
+
+bike.destroyed:
+	idle: bike
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+
+ftnk:
+	Defaults:
+		Offset: 0,-1
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	muzzle0: flame-00
+		Length: *
+	muzzle1: flame-01
+		Length: *
+	muzzle2: flame-02
+		Length: *
+	muzzle3: flame-03
+		Length: *
+	muzzle4: flame-04
+		Length: *
+	muzzle5: flame-05
+		Length: *
+	muzzle6: flame-06
+		Length: *
+	muzzle7: flame-07
+		Length: *
+	muzzle8: flame-08
+		Length: *
+	muzzle9: flame-09
+		Length: *
+		ZOffset: 127
+	muzzle10: flame-10
+		Length: *
+		ZOffset: 127
+	muzzle11: flame-11
+		Length: *
+		ZOffset: 127
+	muzzle12: flame-12
+		Length: *
+		ZOffset: 127
+	muzzle13: flame-13
+		Length: *
+		ZOffset: 127
+	muzzle14: flame-14
+		Length: *
+		ZOffset: 127
+	muzzle15: flame-15
+		Length: *
+		ZOffset: 127
+	muzzle16: flame-16
+		Length: *
+		ZOffset: 127
+	muzzle17: flame-17
+		Length: *
+		ZOffset: 127
+	muzzle18: flame-18
+		Length: *
+		ZOffset: 127
+	muzzle19: flame-19
+		Length: *
+		ZOffset: 127
+	muzzle20: flame-20
+		Length: *
+		ZOffset: 127
+	muzzle21: flame-21
+		Length: *
+		ZOffset: 127
+	muzzle22: flame-22
+		Length: *
+		ZOffset: 127
+	muzzle23: flame-23
+		Length: *
+		ZOffset: 127
+	muzzle24: flame-24
+		Length: *
+		ZOffset: 127
+	muzzle25: flame-25
+		Length: *
+	muzzle26: flame-26
+		Length: *
+	muzzle27: flame-27
+		Length: *
+	muzzle28: flame-28
+		Length: *
+	muzzle29: flame-29
+		Length: *
+	muzzle30: flame-30
+		Length: *
+	muzzle31: flame-31
+		Length: *
+	icon: ftnkicnh.tem
+		AddExtension: False
+		Offset: 0,0
+
+ftnk.destroyed:
+	idle: ftnk
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+		Offset: 0,-1
+
+mhq:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	spinner:
+		Start: 32
+		Length: 32
+	icon: mhqicnh
+
+msam:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	turret:
+		Start: 32
+		Facings: 32
+		UseClassicFacingFudge: True
+	aim:
+		Start: 64
+		Facings: 32
+		UseClassicFacingFudge: True
+	turret-3:
+		Start: 64
+		Facings: 32
+		UseClassicFacingFudge: True
+	icon: msamicnh.tem
+		AddExtension: False
+
+msam.destroyed:
+	idle: msam
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+	turret: msam
+		Start: 32
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+
+mlrs:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	turret2:
+		Start: 32
+		Facings: 32
+		UseClassicFacingFudge: True
+	turret1:
+		Start: 64
+		Facings: 32
+		UseClassicFacingFudge: True
+	turret0:
+		Start: 96
+		Facings: 32
+		UseClassicFacingFudge: True
+	turret:
+		Start: 96
+		Facings: 32
+		UseClassicFacingFudge: True
+	icon: mlrsicnh.tem
+		AddExtension: False
+
+mlrs.destroyed:
+	idle: mlrs
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+	turret: mlrs
+		Start: 96
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+
+stnk:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	icon: stnkicnh.tem
+		AddExtension: False
+
+stnk.destroyed:
+	idle: stnk
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+
+arty:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+		Offset: 0,-3
+	muzzle: gunfire2
+		Length: *
+		Offset: 0,-3
+	icon: artyicnh.tem
+		AddExtension: False
+
+arty.destroyed:
+	idle: arty
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+		Offset: 0,-3
+
+apc:
+	Defaults:
+		Offset: 0,-2
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+#	muzzle: minigun
+#		Length: 6
+#		Facings: 8
+	muzzle0: minigun
+		Length: 6
+	muzzle1: mgun-nnw
+		Length: *
+	muzzle2: minigun
+		Start: 6
+		Length: 6
+	muzzle3: mgun-wnw
+		Length: *
+	muzzle4: minigun
+		Start: 12
+		Length: 6
+	muzzle5: mgun-wsw
+		Length: *
+	muzzle6: minigun
+		Start: 18
+		Length: 6
+	muzzle7: mgun-ssw
+		Length: *
+	muzzle8: minigun
+		Start: 24
+		Length: 6
+	muzzle9: mgun-sse
+		Length: *
+	muzzle10: minigun
+		Start: 30
+		Length: 6
+	muzzle11: mgun-ese
+		Length: *
+	muzzle12: minigun
+		Start: 36
+		Length: 6
+	muzzle13: mgun-ene
+		Length: *
+	muzzle14: minigun
+		Start: 42
+		Length: 6
+	muzzle15: mgun-nne
+		Length: *
+	close:
+		Start: 32
+		Length: 3
+	unload:
+		Start: 32
+	icon: apcicnh.tem
+		AddExtension: False
+		Offset: 0,0
+
+apc.destroyed:
+	idle: apc
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+		Offset: 0,-2
+
+t55h:
+	Defaults:
+		Length: *
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+		Length: 1
+	turret:
+		Start: 32
+		Length: 1
+		Facings: 32
+		UseClassicFacingFudge: True
+	muzzle0: cann-n
+	muzzle1: cann-nnw
+	muzzle2: cann-nw
+	muzzle3: cann-nww
+	muzzle4: cann-w
+	muzzle5: cann-sww
+	muzzle6: cann-sw
+	muzzle7: cann-ssw
+	muzzle8: cann-s
+	muzzle9: cann-sse
+	muzzle10: cann-se
+	muzzle11: cann-see
+	muzzle12: cann-e
+	muzzle13: cann-nee
+	muzzle14: cann-ne
+	muzzle15: cann-nne
+	icon: t55hicnh.shp
+		AddExtension: False
+		Length: 1
+
+t55h.destroyed:
+	idle: t55h
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+	turret: t55h
+		Start: 32
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+
+mtnk2:
+	Defaults:
+		Length: *
+		Offset: 0,-2
+	idle:
+		Length: 1
+		Facings: 32
+		UseClassicFacingFudge: True
+	turret:
+		Start: 32
+		Length: 1
+		Facings: 32
+		UseClassicFacingFudge: True
+	muzzle0: cann-n
+	muzzle1: cann-nnw
+	muzzle2: cann-nw
+	muzzle3: cann-nww
+	muzzle4: cann-w
+	muzzle5: cann-sww
+	muzzle6: cann-sw
+	muzzle7: cann-ssw
+	muzzle8: cann-s
+	muzzle9: cann-sse
+	muzzle10: cann-se
+	muzzle11: cann-see
+	muzzle12: cann-e
+	muzzle13: cann-nee
+	muzzle14: cann-ne
+	muzzle15: cann-nne
+	icon: mtnkicnh.tem
+		AddExtension: False
+		Length: 1
+		Offset: 0,0
+
+mtnk2.destroyed:
+	idle: mtnk2
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+		Offset: 0,-2
+	turret: mtnk2
+		Start: 32
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+		Offset: 0,-2
+
+htnk2:
+	Defaults:
+		Length: *
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+		Length: 1
+	turret:
+		Start: 32
+		Facings: 32
+		UseClassicFacingFudge: True
+		Length: 1
+	muzzle0: cann-n
+	muzzle1: cann-nnw
+	muzzle2: cann-nw
+	muzzle3: cann-nww
+	muzzle4: cann-w
+	muzzle5: cann-sww
+	muzzle6: cann-sw
+	muzzle7: cann-ssw
+	muzzle8: cann-s
+	muzzle9: cann-sse
+	muzzle10: cann-se
+	muzzle11: cann-see
+	muzzle12: cann-e
+	muzzle13: cann-nee
+	muzzle14: cann-ne
+	muzzle15: cann-nne
+	icon: htnkicnh.tem
+		AddExtension: False
+		Length: 1
+
+htnk2.destroyed:
+	idle: htnk2
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+	turret: htnk2
+		Start: 32
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+
+mrpg:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+		Offset: 0,2
+	muzzle: gunfire2
+		Length: 5
+		Tick: 50
+	icon: mrpgicnh.shp
+		AddExtension: False
+
+mrpg.destroyed:
+	idle: mrpg
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+
+napc:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+		Offset: 0,1
+#	muzzle: minigun
+#		Length: 6
+#		Facings: 8
+	muzzle0: minigun
+		Length: 6
+	muzzle1: mgun-nnw
+		Length: *
+	muzzle2: minigun
+		Start: 6
+		Length: 6
+	muzzle3: mgun-wnw
+		Length: *
+	muzzle4: minigun
+		Start: 12
+		Length: 6
+	muzzle5: mgun-wsw
+		Length: *
+	muzzle6: minigun
+		Start: 18
+		Length: 6
+	muzzle7: mgun-ssw
+		Length: *
+	muzzle8: minigun
+		Start: 24
+		Length: 6
+	muzzle9: mgun-sse
+		Length: *
+	muzzle10: minigun
+		Start: 30
+		Length: 6
+	muzzle11: mgun-ese
+		Length: *
+	muzzle12: minigun
+		Start: 36
+		Length: 6
+	muzzle13: mgun-ene
+		Length: *
+	muzzle14: minigun
+		Start: 42
+		Length: 6
+	muzzle15: mgun-nne
+		Length: *
+	close:
+		Start: 32
+		Length: 3
+		Offset: 0,1
+	unload:
+		Start: 32
+		Offset: 0,1
+	icon: napcicnh.shp
+		AddExtension: False
+
+napc.destroyed:
+	idle: napc
+		Facings: 32
+		UseClassicFacingFudge: True
+		ZOffset: -512
+
+ctnk:
+	Defaults:
+		Length: *
+		Offset: 0,-2
+	idle:
+		Facings: 32
+		Length: 1
+		UseClassicFacingFudge: True
+		Offset: 0,0
+	muzzle0: chem-00
+	muzzle1: chem-01
+	muzzle2: chem-02
+	muzzle3: chem-03
+	muzzle4: chem-04
+	muzzle5: chem-05
+	muzzle6: chem-06
+	muzzle7: chem-07
+	muzzle8: chem-08
+	muzzle9: chem-09
+		ZOffset: 127
+	muzzle10: chem-10
+		ZOffset: 127
+	muzzle11: chem-11
+		ZOffset: 127
+	muzzle12: chem-12
+		ZOffset: 127
+	muzzle13: chem-13
+		ZOffset: 127
+	muzzle14: chem-14
+		ZOffset: 127
+	muzzle15: chem-15
+		ZOffset: 127
+	muzzle16: chem-16
+		ZOffset: 127
+	muzzle17: chem-17
+		ZOffset: 127
+	muzzle18: chem-18
+		ZOffset: 127
+	muzzle19: chem-19
+		ZOffset: 127
+	muzzle20: chem-20
+		ZOffset: 127
+	muzzle21: chem-21
+		ZOffset: 127
+	muzzle22: chem-22
+		ZOffset: 127
+	muzzle23: chem-23
+		ZOffset: 127
+	muzzle24: chem-24
+		ZOffset: 127
+	muzzle25: chem-25
+	muzzle26: chem-26
+	muzzle27: chem-27
+	muzzle28: chem-28
+	muzzle29: chem-29
+	muzzle30: chem-30
+	muzzle31: chem-31
+	icon: ctnkicnh.shp
+		AddExtension: False
+		Length: 1
+		Offset: 0,0
+
+ctnk.destroyed:
+	idle: ctnk
+		Facings: 32
+		ZOffset: -512
+		UseClassicFacingFudge: True

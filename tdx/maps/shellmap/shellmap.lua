@@ -17,17 +17,12 @@ WorldLoaded = function()
 	for i, unit in ipairs(units) do
 		LoopTrack(unit, CPos.New(8, unit.Location.Y), CPos.New(87, unit.Location.Y))
 	end
-	PlayMusic()
 end
 
 LoopTrack = function(actor, left, right)
 	actor.ScriptedMove(left)
 	actor.Teleport(right)
 	actor.CallFunc(function() LoopTrack(actor, left, right) end)
-end
-
-PlayMusic = function()
-	Media.PlayMusic("linefire_b", PlayMusic)
 end
 
 LoadTransport = function(transport, passenger)

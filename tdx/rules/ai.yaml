@@ -1,12 +1,110 @@
 Player:
+	HackyAI@EasyAI:
+		Name: Easy AI
+		SquadSize: 2
+		SquadSizeRandomBonus: 2
+		AssignRolesInterval: 250
+		AttackForceInterval: 1000
+		RushInterval: 3000
+		StructureProductionInactiveDelay: 750
+		StructureProductionActiveDelay: 450
+		MinBaseRadius: 4
+		BuildingCommonNames:
+			ConstructionYard: fact
+			Refinery: proc
+			Power: nuke,nuk2
+			Barracks: pyle,hand
+			VehiclesFactory: weap,afld
+			Production: pyle,hand,weap,afld,hpad
+			Silo: silo
+		UnitsCommonNames:
+			Mcv: mcv
+		BuildingQueues: Building
+		DefenseQueues: Defense
+		UnitQueues: Vehicle, Infantry, Aircraft
+		BuildingLimits:
+			proc: 2
+			pyle: 2
+			hand: 2
+			hq: 1
+			weap: 2
+			afld: 2
+			hpad: 0
+			atwr: 0
+			obli: 0
+			sam: 0
+			eye: 0
+			tmpl: 0
+			biolab.nod: 1
+			fix: 0
+			silo: 1
+		BuildingFractions:
+			proc: 20%
+			nuke: 8%
+			pyle: 5%
+			hand: 5%
+			hq: 4%
+			nuk2: 1%
+			weap: 10%
+			afld: 10%
+			gtwr: 5%
+			gun: 5%
+			silo: 0%
+		UnitLimits:
+			harv: 4
+		UnitsToBuild:
+			e1: 20%
+			e3: 10%
+			e2: 10%
+			e4: 5%
+			e5: 5%
+			harv: 1%
+			bggy: 20%
+			bike: 10%
+			napc: 15%
+			ltnk: 5%
+			t55h: 1%
+			ftnk: 5%
+			ctnk: 1%
+			arty: 5%
+			stnk: 1%
+			jeep: 30%
+			apc: 15%
+			mtnk: 5%
+			msam: 3%
+			mrpg: 2%
+			htnk: 1%
+		SupportPowerDecision@Airstrike:
+			OrderName: AirstrikePowerInfoOrder
+			MinimumAttractiveness: 2400
+			Consideration@1:
+				Against: Enemy
+				Types: Vehicle, Infantry
+				Attractiveness: 3
+				TargetMetric: Value
+				CheckRadius: 2c0
+			Consideration@2:
+				Against: Enemy
+				Types: Structure
+				Attractiveness: 1
+				TargetMetric: Value
+				CheckRadius: 2c0
+			Consideration@3:
+				Against: Ally
+				Types: Ground, Water
+				Attractiveness: -10
+				TargetMetric: Value
+				CheckRadius: 2c0
 	HackyAI@RushAI:
 		Name: Rush AI
+		MinimumExcessPower: 99
+		MinOrderQuotientPerTick: 4
 		SquadSize: 10
+		SquadSizeRandomBonus: 10
 		AssignRolesInterval: 30
 		AttackForceInterval: 50
 		RushInterval: 500
-		StructureProductionInactiveDelay: 125
-		StructureProductionActiveDelay: 10
+		MinBaseRadius: 4
 		BuildingCommonNames:
 			ConstructionYard: fact
 			Refinery: proc
@@ -67,7 +165,7 @@ Player:
 			bike: 40%
 			napc: 15%
 			ltnk: 35%
-			t55h: 30%
+			t55h: 40%
 			ftnk: 15%
 			ctnk: 20%
 			arty: 20%
@@ -77,19 +175,25 @@ Player:
 			mtnk: 30%
 			msam: 20%
 			mrpg: 30%
-			htnk: 50%
+			htnk: 30%
 			hind: 5%
 			orca: 5%
 		SupportPowerDecision@Airstrike:
 			OrderName: AirstrikePowerInfoOrder
-			MinimumAttractiveness: 2000
+			MinimumAttractiveness: 2400
 			Consideration@1:
 				Against: Enemy
 				Types: Vehicle, Infantry
-				Attractiveness: 1
+				Attractiveness: 3
 				TargetMetric: Value
 				CheckRadius: 2c0
 			Consideration@2:
+				Against: Enemy
+				Types: Structure
+				Attractiveness: 1
+				TargetMetric: Value
+				CheckRadius: 2c0
+			Consideration@3:
 				Against: Ally
 				Types: Ground, Water
 				Attractiveness: -10
@@ -134,12 +238,13 @@ Player:
 				CheckRadius: 7c0
 	HackyAI@TurtleAI:
 		Name: Turtle AI
-		SquadSize: 25
+		MinimumExcessPower: 99
+		MinOrderQuotientPerTick: 3
+		SquadSize: 30
 		AssignRolesInterval: 50
 		AttackForceInterval: 50
-		RushInterval: 1000
-		StructureProductionInactiveDelay: 125
-		StructureProductionActiveDelay: 10
+		RushInterval: 1500
+		MinBaseRadius: 4
 		BuildingCommonNames:
 			ConstructionYard: fact
 			Refinery: proc
@@ -171,17 +276,17 @@ Player:
 			silo: 1
 		BuildingFractions:
 			proc: 20%
-			nuke: 9%
+			nuke: 1%
 			pyle: 5%
 			hand: 5%
 			hq: 4%
 			nuk2: 9%
 			weap: 9%
 			afld: 9%
-			gtwr: 5%
-			gun: 6%
-			atwr: 9%
-			obli: 7%
+			gtwr: 15%
+			gun: 16%
+			atwr: 19%
+			obli: 17%
 			sam: 7%
 			eye: 1%
 			tmpl: 1%
@@ -213,14 +318,20 @@ Player:
 			orca: 5%
 		SupportPowerDecision@Airstrike:
 			OrderName: AirstrikePowerInfoOrder
-			MinimumAttractiveness: 2000
+			MinimumAttractiveness: 2400
 			Consideration@1:
 				Against: Enemy
 				Types: Vehicle, Infantry
-				Attractiveness: 1
+				Attractiveness: 3
 				TargetMetric: Value
 				CheckRadius: 2c0
 			Consideration@2:
+				Against: Enemy
+				Types: Structure
+				Attractiveness: 1
+				TargetMetric: Value
+				CheckRadius: 2c0
+			Consideration@3:
 				Against: Ally
 				Types: Ground, Water
 				Attractiveness: -10

@@ -1,12 +1,10 @@
-MapFormat: 7
+MapFormat: 11
 
 RequiresMod: tdx
 
 Title: shellmap
 
-Description: TDX Shellmap
-
-Author: Chris Forbes/Reaperrr
+Author: Reaperrr
 
 Tileset: WINTER
 
@@ -16,79 +14,33 @@ Bounds: 8,1,80,45
 
 Visibility: Shellmap
 
-Type: Shellmap
-
-Videos:
-
-Options:
+Categories: Shellmap
 
 Players:
 	PlayerReference@Nod:
 		Name: Nod
-		Race: nod
-		ColorRamp: 3,255,127
+		Faction: nod
+		Color: FE1100
 		Allies: Nod
 		Enemies: GDI, Creeps
 	PlayerReference@GDI:
 		Name: GDI
-		Race: gdi
-		ColorRamp: 31,222,183
+		Faction: gdi
+		Color: F5D378
 		Allies: GDI
 		Enemies: Nod, Creeps
 	PlayerReference@Neutral:
 		Name: Neutral
 		OwnsWorld: True
 		NonCombatant: True
-		Race: gdi
-	PlayerReference@Multi0:
-		Name: Multi0
-		Playable: True
-		Race: Random
-		Enemies: Creeps
-	PlayerReference@Multi1:
-		Name: Multi1
-		Playable: True
-		Race: Random
-		Enemies: Creeps
-	PlayerReference@Multi2:
-		Name: Multi2
-		Playable: True
-		Race: Random
-		Enemies: Creeps
-	PlayerReference@Multi3:
-		Name: Multi3
-		Playable: True
-		Race: Random
-		Enemies: Creeps
-	PlayerReference@Multi4:
-		Name: Multi4
-		Playable: True
-		Race: Random
-		Enemies: Creeps
-	PlayerReference@Multi5:
-		Name: Multi5
-		Playable: True
-		Race: Random
-		Enemies: Creeps
+		Faction: gdi
 	PlayerReference@Creeps:
 		Name: Creeps
 		NonCombatant: True
-		Race: Random
-		Enemies: Nod, GDI, Multi0, Multi1, Multi2, Multi3, Multi4, Multi5
+		Faction: Random
+		Enemies: Nod, GDI
 
 Actors:
-	boat1: boat
-		Location: 45,33
-		Owner: GDI
-	boat2: boat
-		Location: 39,37
-		Owner: GDI
-	boat3: boat
-		Location: 70,33
-		Owner: GDI
-	boat4: boat
-		Location: 79,37
-		Owner: GDI
 	Actor4: fix
 		Location: 59,44
 		Owner: GDI
@@ -358,9 +310,11 @@ Actors:
 	Actor96: gun
 		Location: 33,5
 		Owner: Nod
+		Facing: 144
 	Actor97: gun
 		Location: 39,3
 		Owner: Nod
+		Facing: 128
 	Actor98: nuke
 		Location: 22,1
 		Owner: Nod
@@ -971,6 +925,18 @@ Actors:
 	Actor221: jeep
 		Location: 57,45
 		Owner: GDI
+	boat1: boat
+		Location: 45,33
+		Owner: GDI
+	boat2: boat
+		Location: 39,37
+		Owner: GDI
+	boat3: boat
+		Location: 70,33
+		Owner: GDI
+	boat4: boat
+		Location: 79,37
+		Owner: GDI
 	lst1: lst
 		Location: 53,35
 		Owner: GDI
@@ -1000,45 +966,4 @@ Actors:
 		Owner: Nod
 		Facing: 128
 
-Smudges:
-
-Rules:
-	World:
-		-SpawnMPUnits:
-		-MPStartLocations:
-		-CrateSpawner:
-		LuaScript:
-			Scripts: shellmap.lua
-		WorldPaletteEffect:
-			DayNightCycle: true
-			InitialEffect: Evening
-			MorningDayTransitionLength: 300
-			DayLength: 600
-			DayEveningTransitionLength: 300
-			EveningNightTransitionLength: 300
-			NightLength: 450
-			NightMorningTransitionLength: 300
-			DaylightFactorRed: 105
-			DaylightFactorGreen: 110
-			DaylightFactorBlue: 110
-	LST:
-		Mobile:
-			Speed: 42
-	BOAT:
-		Mobile:
-			Speed: 42
-
-Sequences:
-
-VoxelSequences:
-
-Weapons:
-	155mm:
-		ReloadDelay: 65
-		Range: 14c512
-
-Voices:
-
-Notifications:
-
-Translations:
+Rules: tdx|rules/campaign-palettes.yaml, rules.yaml

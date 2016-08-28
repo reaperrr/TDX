@@ -1,0 +1,212 @@
+FlametankExplode:
+	Warhead@1Dam: SpreadDamageX
+		Spread: 512
+		Damage: 1000
+		Falloff: 100, 50, 25, 0
+		InvalidTargets: Wall
+		Versus:
+			Light: 65
+			Medium: 45
+			Heavy: 25
+			Steel: 45
+			Concrete: 30
+		DamageTypes: Prone50Percent, TriggerProne, FireDeath
+	Warhead@2Smu: LeaveSmudgeX
+		SmudgeType: Scorch
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Tree, TibTree, Rock
+	Warhead@3Eff: CreateEffectX
+		Explosions: big_ranapalm
+		ImpactSounds: firebl3.aud
+		ExplosionPalette: flashyeffectra
+
+ChemtankExplode:
+	Warhead@1Dam: SpreadDamageX
+		Damage: 2000
+		Spread: 512
+		Falloff: 100, 60, 30, 0
+		Versus:
+			Wood: 90
+			Light: 75
+			Medium: 55
+			Heavy: 40
+		DamageTypes: Prone50Percent, TriggerProne, TiberiumDeath
+	Warhead@2Eff: CreateEffectX
+		Explosions: big_chemexpl
+		ImpactSounds: xplobig6.aud
+
+HeliCrash:
+	Warhead@1Dam: SpreadDamageX
+		Spread: 426
+		Falloff: 100, 50, 0
+		Damage: 500
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Eff: CreateEffectX
+		Explosions: poof
+		ImpactSounds: xplomed2.aud
+		InvalidImpactTypes: Water
+		ExplosionPalette: flashyeffect
+	Warhead@3Eff: CreateEffectX
+		Explosions: big_splash
+		ImpactSounds: splash9.aud
+		ExplosionPalette: effectra
+		ValidImpactTypes: Water
+	Warhead@5EffFlash: CreateEffectX
+		Explosions: flash3
+		ExplosionPalette: alpha
+		InvalidImpactTypes: Water
+
+HeliExplode:
+	Warhead@1Dam: SpreadDamageX
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Eff: CreateEffectX
+		Explosions: sml_building
+		ImpactSounds: xplomed1.aud
+		ExplosionPalette: flashyeffect
+	Warhead@5EffFlash: CreateEffectX
+		Explosions: flash3small
+		ExplosionPalette: alpha
+		InvalidImpactTypes: Water
+
+UnitExplode:
+	Warhead@1Dam: SpreadDamageX
+		Spread: 384
+		Damage: 1500
+		Falloff: 100, 40, 20, 10, 5, 0
+		Versus:
+			None: 90
+			Wood: 75
+			Steel: 80
+			Light: 60
+			Medium: 40
+			Heavy: 25
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Eff: CreateEffectX
+		Explosions: big_frag
+		ImpactSounds: xplobig3.aud
+		ExplosionPalette: flashyeffect
+	Warhead@5EffFlash: CreateEffectX
+		Explosions: flash3
+		ExplosionPalette: alpha
+		InvalidImpactTypes: Water
+
+UnitExplodeSmall:
+	Warhead@1Dam: SpreadDamageX
+		Spread: 426
+		Falloff: 100, 40, 20, 10, 5, 0
+		Damage: 400
+		Versus:
+			None: 90
+			Wood: 75
+			Light: 60
+			Heavy: 25
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Eff: CreateEffectX
+		Explosions: med_frag
+		ImpactSounds: xplomed3.aud
+		ExplosionPalette: flashyeffect
+	Warhead@5EffFlash: CreateEffectX
+		Explosions: flash5
+		ExplosionPalette: alpha
+		InvalidImpactTypes: Water
+
+GrenadierExplode:
+	Warhead@1Dam: SpreadDamageX
+		Spread: 256
+		Falloff: 100, 50, 25, 13, 0
+		Damage: 500
+		Versus:
+			None: 90
+			Wood: 75
+			Steel: 80
+			Light: 60
+			Medium: 50
+			Heavy: 25
+		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
+	Warhead@2Eff: CreateEffectX
+		Explosions: poof
+		ImpactSounds: xplomed5.aud
+		ExplosionPalette: flashyeffect
+	Warhead@5EffFlash: CreateEffectX
+		Explosions: flash3small
+		ExplosionPalette: alpha
+		InvalidImpactTypes: Water
+
+FlamethrowerExplode:
+	Warhead@1Dam: SpreadDamageX
+		Spread: 384
+		Damage: 500
+		Falloff: 100, 50, 0
+		InvalidTargets: Wall
+		Versus:
+			Light: 65
+			Medium: 40
+			Heavy: 25
+			Steel: 45
+			Concrete: 30
+		DamageTypes: Prone50Percent, TriggerProne, FireDeath
+	Warhead@2Eff: CreateEffectX
+		Explosions: sml_ranapalm
+		ImpactSounds: firebl3.aud
+		ExplosionPalette: flashyeffectra
+	Warhead@5EffFlash: CreateEffectX
+		Explosions: flash5small
+		ExplosionPalette: alpha
+		InvalidImpactTypes: Water
+
+ChemWarriorExplode:
+	Warhead@1Dam: SpreadDamageX
+		Damage: 500
+		Spread: 256
+		Falloff: 100, 60, 30, 15, 0
+		Versus:
+			Wood: 90
+			Light: 75
+			Medium: 50
+			Heavy: 40
+		DamageTypes: Prone50Percent, TriggerProne, TiberiumDeath
+	Warhead@2Eff: CreateEffectX
+		Explosions: sml_chemexpl
+		ImpactSounds: flamer2.aud
+
+Napalm.Crate:
+	Warhead@1Dam: SpreadDamageX
+		Spread: 171
+		Damage: 5000
+		Falloff: 100, 50, 25, 13, 6, 0
+		Versus:
+			Light: 60
+			Medium: 50
+			Heavy: 25
+			Steel: 60
+			Concrete: 25
+		DamageTypes: Prone50Percent, TriggerProne, FireDeath
+	Warhead@2Smu: LeaveSmudgeX
+		SmudgeType: Scorch
+		InvalidTargets: Structure, Wall, Tree, TibTree, Rock
+	Warhead@3Eff: CreateEffectX
+		Explosions: med_ranapalm
+		ExplosionPalette: flashyeffectra
+		ImpactSounds: flamer2.aud
+	Warhead@5EffFlash: CreateEffectX
+		Explosions: flash5
+		ExplosionPalette: alpha
+		InvalidImpactTypes: Water
+
+TiberiumExplosion:
+	Warhead@1Dam: SpreadDamageX
+		Spread: 9
+		Damage: 100
+		Versus:
+			None: 90
+			Wood: 75
+			Steel: 60
+			Light: 60
+			Medium: 45
+			Heavy: 25
+		DamageTypes: Prone50Percent, TriggerProne, TiberiumDeath
+	Warhead@2Res: CreateResource
+		AddsResourceType: Tiberium
+		Size: 1,1
+	Warhead@3Eff: CreateEffectX
+		Explosions: med_chemexpl
+		ImpactSounds: xplosml2.aud

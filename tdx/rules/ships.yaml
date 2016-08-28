@@ -5,30 +5,35 @@ BOAT:
 	Tooltip:
 		Name: Gunboat
 	Health:
-		HP: 700
+		HP: 7000
 	Armor:
-		Type: Heavy
+		Type: Medium
 	Mobile:
 		InitialFacing: 64
-		ROT: 4
+		TurnSpeed: 255
 		Speed: 28
 		OnRails: true
 	RevealsShroud:
 		Range: 7c0
 	Turreted:
-		ROT: 7
-		Offset: 0,896,171
+		TurnSpeed: 7
+		Offset: 0,896,213
 	Armament:
 		Weapon: BoatMissile
-		LocalOffset: 85,-85,0, 85,85,0
+		LocalOffset: 85,-85,85, 85,85,85
 	AttackTurreted:
-	RenderGunboat:
+	BodyOrientation:
+		QuantizedFacings: 2
+	WithGunboatBody:
+		Sequence: left
 	Selectable:
 		Bounds: 42,24
 	AutoTarget:
 		AllowMovement: false
 	WithSmoke:
 	RejectsOrders:
+	RenderSprites:
+	AutoSelectionSize:
 
 LST:
 	Inherits: ^Ship
@@ -48,15 +53,18 @@ LST:
 			Beach: 100
 			River: 100
 		InitialFacing: 0
-		ROT: 4
+		TurnSpeed: 4
 		Speed: 142
 	Health:
-		HP: 400
+		HP: 4000
 	Armor:
-		Type: Heavy
+		Type: Medium
 	RevealsShroud:
 		Range: 7c0
-	RenderUnit:
+	RenderSprites:
+	AutoSelectionSize:
+	QuantizeFacingsFromSequence:
+	WithFacingSpriteBody:
 	WithRoof:
 	WithCargo:
 		DisplayTypes: Infantry, Vehicle

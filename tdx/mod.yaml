@@ -1,211 +1,157 @@
 Metadata:
 	Title: Tiberian Dawn Xtended
 	Description: What might C&C1 have been like with a large, RA2-YR-like expansion\nthat adds new units, new features and gives the game balance\nan overhaul?\n\nTiberian Dawn Xtended is my attempt to answer that question while trying\nto stay closer to the overall "feel" of the original than OpenRA's\ninterpretation of Tiberian Dawn. 
-	Version: beta 0.104 (20150514)
+	Version: Version 0.5
 	Author: Reaperrr
 
-Folders:
-	.
-	./mods/tdx
-	./mods/tdx/bits
-	./mods/tdx/bits/caribic
-	./mods/tdx/bits/cnc
-	./mods/tdx/bits/jungle
-	./mods/tdx/bits/ss
-	./mods/tdx/bits/tdx_aud
-	./mods/tdx/ui/uibits
-	~^Content/tdx
-
-MapFolders:
-	./mods/tdx/maps: System
-	~^maps/tdx: User
+RequiresMods:
+	modchooser: {DEV_VERSION}
 
 Packages:
-	speech.mix
-	conquer.mix
-	sounds.mix
-	tempicnh.mix
-	temperat.mix
-	winter.mix
-	desert.mix
-	snow.mix
-	~tdx-scores.mix:CRC32
-	~movies-gdi.mix
-	~movies-nod.mix
-	~movies.mix
+	~^Content/tdx
+	.
+	$tdx: tdx
+	$cnc: cnc
+	$ra: ra
+	./mods/common: common
+	~conquer.mix
+	~cclocal.mix
+	~sounds.mix
+	~speech.mix
+	~tdx-scores.mix
+	~tempicnh.mix
+	~desert.mix
+	~temperat.mix
+	~snow.mix
+	~winter.mix
+	tdx|bits/caribic
+	tdx|bits/desert
+	tdx|bits/jungle
+	tdx|bits/snow.mix
+	tdx|bits/sounds
+	tdx|bits/ss
+	tdx|bits/actorsprites
+	tdx|bits/warfaresprites
+	tdx|bits
+	tdx|uibits
+
+MapFolders:
+	tdx|maps: System
+	~^maps/tdx/v0.5: User
 
 Rules:
-	./mods/tdx/rules/world.yaml
-	./mods/tdx/rules/ai.yaml
-	./mods/tdx/rules/player.yaml
-	./mods/tdx/rules/player-classic-production.yaml
-	./mods/tdx/rules/defaults.yaml
-	./mods/tdx/rules/aircraft.yaml
-	./mods/tdx/rules/structures.yaml
-	./mods/tdx/rules/infantry.yaml
-	./mods/tdx/rules/vehicles.yaml
-	./mods/tdx/rules/tdx_aircraft.yaml
-	./mods/tdx/rules/tdx_vehicles.yaml
-	./mods/tdx/rules/civilian.yaml
-	./mods/tdx/rules/ships.yaml
-	./mods/tdx/rules/misc.yaml
-	./mods/tdx/rules/trees.yaml
-	./mods/tdx/rules/civilian-desert.yaml
-	./mods/tdx/rules/tech.yaml
-	./mods/tdx/rules/husks.yaml
-
-Weapons:
-	./mods/tdx/weapons/ballistic.yaml
-	./mods/tdx/weapons/missiles.yaml
-	./mods/tdx/weapons/other-weapons.yaml
-	./mods/tdx/weapons/smallarms.yaml
-	./mods/tdx/weapons/superweapons.yaml
+	tdx|rules/misc.yaml
+	tdx|rules/ai.yaml
+	tdx|rules/player.yaml
+	tdx|rules/palettes.yaml
+	tdx|rules/world.yaml
+	tdx|rules/defaults.yaml
+	tdx|rules/vehicles.yaml
+	tdx|rules/husks.yaml
+	tdx|rules/structures.yaml
+	tdx|rules/infantry.yaml
+	tdx|rules/civilian.yaml
+	tdx|rules/decoration.yaml
+	tdx|rules/aircraft.yaml
+	tdx|rules/ships.yaml
 
 Sequences:
-	./mods/tdx/sequences/tdx-aircraft.yaml
-	./mods/tdx/sequences/tdx-explosions.yaml
-	./mods/tdx/sequences/tdx-misc.yaml
-	./mods/tdx/sequences/tdx-vehicles.yaml
-	./mods/tdx/sequences/cnc-aircraft.yaml
-	./mods/tdx/sequences/cnc-structures.yaml
-	./mods/tdx/sequences/cnc-vehicles.yaml
-	./mods/tdx/sequences/cnc-infantry.yaml
-	./mods/tdx/sequences/cnc-civilian.yaml
-	./mods/tdx/sequences/cnc-decorations.yaml
-	./mods/tdx/sequences/cnc-funpark.yaml
-	./mods/tdx/sequences/cnc-campaign.yaml
-
-Cursors:
-	./mods/tdx/cursors.yaml
-
-Assemblies:
-	./mods/common/OpenRA.Mods.Common.dll
-	./mods/ra/OpenRA.Mods.RA.dll
-	./mods/cnc/OpenRA.Mods.Cnc.dll
-	./mods/tdx/OpenRA.Mods.TDX.dll
-	
-Translations:
-	./mods/tdx/languages/english.yaml
-
-Voices:
-	./mods/tdx/audio/voices.yaml
-
-Notifications:
-	./mods/tdx/audio/notifications.yaml
-
-Music:
-	./mods/tdx/audio/music.yaml
-
-Missions:
-	./mods/tdx/missions.yaml
+	tdx|sequences/ships.yaml
+	tdx|sequences/vehicles.yaml
+	tdx|sequences/structures.yaml
+	tdx|sequences/infantry.yaml
+	tdx|sequences/aircraft.yaml
+	tdx|sequences/misc.yaml
+	tdx|sequences/decorations.yaml
 
 TileSets:
-	./mods/tdx/tilesets/desert.yaml
-	./mods/tdx/tilesets/winter.yaml
-	./mods/tdx/tilesets/snow.yaml
-	./mods/tdx/tilesets/temperat.yaml
-	./mods/tdx/tilesets/jungle.yaml
-	./mods/tdx/tilesets/caribic.yaml
+	tdx|tilesets/snow.yaml
+	tdx|tilesets/winter.yaml
+	tdx|tilesets/temperat.yaml
+	tdx|tilesets/desert.yaml
+	tdx|tilesets/caribic.yaml
+	tdx|tilesets/jungle.yaml
 
-SupportsMapsFrom: cnc, tdx
-
-SpriteFormats: ShpTD, TmpTD, ShpTS, TmpRA
-
-SpriteSequenceFormat: TilesetSpecificSpriteSequence
-	TilesetExtensions:
-		TEMPERAT: .tem
-		WINTER: .win
-		SNOW: .sno
-		DESERT: .des
-		JUNGLE: .jun
-		CARIBIC: .car
-
-LoadScreen: LogoStripeLoadScreen
-	Image: ./mods/tdx/ui/uibits/loadscreen.png
-	Text: Loading
-
-Fonts:
-	Small:
-		Font:./mods/common/FreeSans.ttf
-		Size:12
-	Regular:
-		Font:./mods/common/FreeSans.ttf
-		Size:14
-	Bold:
-		Font:./mods/common/FreeSansBold.ttf
-		Size:14
-	Title:
-		Font:./mods/common/FreeSansBold.ttf
-		Size:32
-	MediumBold:
-		Font:./mods/common/FreeSansBold.ttf
-		Size:18
-	BigBold:
-		Font:./mods/common/FreeSansBold.ttf
-		Size:24
-	Tiny:
-		Font:./mods/common/FreeSans.ttf
-		Size:10
-	TinyBold:
-		Font:./mods/common/FreeSansBold.ttf
-		Size:10
-
-ChromeMetrics:
-	./mods/tdx/ui/metrics.yaml
+Cursors:
+	tdx|cursors.yaml
 
 Chrome:
-	./mods/tdx/ui/chrome.yaml
+	tdx|chrome.yaml
+
+Assemblies:
+	common|OpenRA.Mods.Common.dll
+	cnc|OpenRA.Mods.Cnc.dll
+	tdx|OpenRA.Mods.TDX.dll
 
 ChromeLayout:
-	./mods/tdx/ui/chrome/install.yaml
-	./mods/ra/chrome/ingame.yaml
-	./mods/ra/chrome/ingame-chat.yaml
-	./mods/ra/chrome/ingame-diplomacy.yaml
-	./mods/ra/chrome/ingame-fmvplayer.yaml
-	./mods/ra/chrome/ingame-menu.yaml
-	./mods/ra/chrome/ingame-info.yaml
-	./mods/ra/chrome/ingame-infoscripterror.yaml
-	./mods/ra/chrome/ingame-infobriefing.yaml
-	./mods/ra/chrome/ingame-infoobjectives.yaml
-	./mods/ra/chrome/ingame-infostats.yaml
-	./mods/ra/chrome/ingame-observer.yaml
-	./mods/ra/chrome/ingame-observerstats.yaml
-	./mods/tdx/ui/chrome/ingame-player.yaml
-	./mods/ra/chrome/ingame-debug.yaml
-	./mods/ra/chrome/ingame-leavemap.yaml
-	./mods/tdx/ui/chrome/mainmenu.yaml
-	./mods/ra/chrome/settings.yaml
-	./mods/ra/chrome/credits.yaml
-	./mods/ra/chrome/lobby.yaml
-	./mods/ra/chrome/lobby-mappreview.yaml
-	./mods/ra/chrome/lobby-playerbin.yaml
-	./mods/ra/chrome/lobby-dialogs.yaml
-	./mods/ra/chrome/color-picker.yaml
-	./mods/ra/chrome/map-chooser.yaml
-	./mods/ra/chrome/create-server.yaml
-	./mods/ra/chrome/serverbrowser.yaml
-	./mods/ra/chrome/connection.yaml
-	./mods/ra/chrome/directconnect.yaml
-	./mods/ra/chrome/replaybrowser.yaml
-	./mods/ra/chrome/dropdowns.yaml
-	./mods/tdx/ui/chrome/musicplayer.yaml
-	./mods/ra/chrome/tooltips.yaml
-	./mods/ra/chrome/assetbrowser.yaml
-	./mods/ra/chrome/missionbrowser.yaml
-	./mods/ra/chrome/confirmation-dialogs.yaml
+	ra|chrome/ingame.yaml
+	ra|chrome/ingame-chat.yaml
+	ra|chrome/ingame-fmvplayer.yaml
+	ra|chrome/ingame-info.yaml
+	ra|chrome/ingame-infoscripterror.yaml
+	ra|chrome/ingame-infobriefing.yaml
+	ra|chrome/ingame-infoobjectives.yaml
+	ra|chrome/ingame-infostats.yaml
+	ra|chrome/ingame-menu.yaml
+	ra|chrome/ingame-observer.yaml
+	ra|chrome/ingame-observerstats.yaml
+	tdx|chrome/ingame-player.yaml
+	ra|chrome/ingame-perf.yaml
+	ra|chrome/ingame-debug.yaml
+	tdx|chrome/mainmenu.yaml
+	ra|chrome/settings.yaml
+	ra|chrome/credits.yaml
+	ra|chrome/lobby.yaml
+	ra|chrome/lobby-mappreview.yaml
+	ra|chrome/lobby-players.yaml
+	ra|chrome/lobby-options.yaml
+	ra|chrome/lobby-music.yaml
+	ra|chrome/lobby-kickdialogs.yaml
+	ra|chrome/lobby-globalchat.yaml
+	ra|chrome/color-picker.yaml
+	ra|chrome/map-chooser.yaml
+	ra|chrome/multiplayer.yaml
+	ra|chrome/multiplayer-browser.yaml
+	ra|chrome/multiplayer-createserver.yaml
+	ra|chrome/multiplayer-directconnect.yaml
+	ra|chrome/multiplayer-globalchat.yaml
+	ra|chrome/connection.yaml
+	ra|chrome/replaybrowser.yaml
+	ra|chrome/dropdowns.yaml
+	tdx|chrome/musicplayer.yaml
+	ra|chrome/tooltips.yaml
+	ra|chrome/assetbrowser.yaml
+	ra|chrome/missionbrowser.yaml
+	ra|chrome/confirmation-dialogs.yaml
+	ra|chrome/editor.yaml
+
+Weapons:
+	tdx|weapons/explosions.yaml
+	tdx|weapons/largecaliber.yaml
+	tdx|weapons/missiles.yaml
+	tdx|weapons/other.yaml
+	tdx|weapons/smallcaliber.yaml
+	tdx|weapons/superweapons.yaml
+	
+Voices:
+	tdx|audio/voices.yaml
+
+Notifications:
+	tdx|audio/notifications.yaml
+
+Music:
+	tdx|audio/music.yaml
+
+Translations:
+	tdx|languages/english.yaml
+
+LoadScreen: LogoStripeLoadScreen
+	Image: tdx|uibits/loadscreen.png
+	Text: Filling Crates..., Planting Trees..., Building Bridges..., Compiling EVA...
 
 ContentInstaller:
-	MenuWidget: INSTALL_PANEL
-	MusicMenuWidget: INSTALL_MUSIC_PANEL
-	TestFiles: conquer.mix, desert.mix, sounds.mix, speech.mix, temperat.mix, tempicnh.mix, winter.mix
-	FilesToCopy: CONQUER.MIX, DESERT.MIX, SOUNDS.MIX, TEMPERAT.MIX, WINTER.MIX
-	FilesToExtract: speech.mix, tempicnh.mix, transit.mix
+	TestFiles: ^Content/tdx/conquer.mix, ^Content/tdx/desert.mix, ^Content/tdx/sounds.mix, ^Content/tdx/speech.mix, ^Content/tdx/temperat.mix, ^Content/tdx/tempicnh.mix, ^Content/tdx/winter.mix
 	PackageMirrorList: http://www.openra.net/packages/cnc-mirrors.txt
-	DiskTestFiles: conquer.mix, desert.mix, install/setup.z
-	PackageToExtractFromCD: install/setup.z
-	ExtractFilesFromCD: speech.mix, tempicnh.mix, transit.mix
-	CopyFilesFromCD: conquer.mix, desert.mix, general.mix, sounds.mix, temperat.mix, winter.mix
-	ShippedSoundtracks: 1
 	MusicPackageMirrorList: http://tdx.ppmsite.com/tdx-music-mirrors.txt
 
 ServerTraits:
@@ -213,13 +159,75 @@ ServerTraits:
 	PlayerPinger
 	MasterServerPinger
 	LobbySettingsNotification
-	ColorValidator
 
-LobbyDefaults:
-	AllowCheats: false
-	Crates: true
-	StartingUnitsClass: heavy
-	FragileAlliances: false
-	Shroud: true
-	Fog: true
-	TechLevel: Unrestricted
+ChromeMetrics:
+	common|metrics.yaml
+	tdx|metrics.yaml
+
+Fonts:
+	Regular:
+		Font: common|FreeSans.ttf
+		Size:14
+	Bold:
+		Font: common|FreeSansBold.ttf
+		Size:14
+	Title:
+		Font: common|FreeSansBold.ttf
+		Size:48
+	MediumBold:
+		Font: common|FreeSansBold.ttf
+		Size:18
+	BigBold:
+		Font: common|FreeSansBold.ttf
+		Size:24
+	Small:
+		Font: common|FreeSans.ttf
+		Size:12
+	Tiny:
+		Font: common|FreeSans.ttf
+		Size:10
+	TinyBold:
+		Font: common|FreeSansBold.ttf
+		Size:10
+
+Missions:
+	tdx|missions.yaml
+
+MapGrid:
+	TileSize: 24,24
+	Type: Rectangular
+
+SupportsMapsFrom: tdx, cnc
+
+SoundFormats: Aud, Wav
+
+SpriteFormats: ShpD2, ShpTD, TmpRA, TmpTD, ShpTS
+
+SpriteSequenceFormat: TilesetSpecificSpriteSequence
+	TilesetExtensions:
+		TEMPERAT: .tem
+		SNOW: .sno
+		WINTER: .win
+		DESERT: .des
+		CARIBIC: .car
+		JUNGLE: .jun
+
+GameSpeeds:
+	slower:
+		Name: Slower
+		Timestep: 50
+		OrderLatency: 3
+	default:
+		Name: Normal
+		Timestep: 40
+		OrderLatency: 3
+	faster:
+		Name: Faster
+		Timestep: 30
+		OrderLatency: 4
+	fastest:
+		Name: Fastest
+		Timestep: 20
+		OrderLatency: 6
+
+ColorValidator:

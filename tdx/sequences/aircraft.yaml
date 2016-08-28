@@ -1,0 +1,195 @@
+c17:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	icon: c17icnh
+
+tran:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	rotor: lrotor
+		Length: 4
+	rotor2: rrotor
+		Length: 4
+	slow-rotor: lrotor
+		Start: 4
+		Length: 8
+	slow-rotor2: rrotor
+		Start: 4
+		Length: 8
+	open:
+		Start: 32
+		Length: 4
+	unload:
+		Start: 35
+	icon: tranicnh.tem
+		AddExtension: False
+
+heli:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	rotor: lrotor
+		Length: 4
+	slow-rotor: lrotor
+		Start: 4
+		Length: 8
+#	muzzle: minigun
+#		Length: 6
+#		Facings: 8
+	muzzle0: minigun
+		Length: 6
+	muzzle1: mgun-nnw
+		Length: *
+	muzzle2: minigun
+		Start: 6
+		Length: 6
+	muzzle3: mgun-wnw
+		Length: *
+	muzzle4: minigun
+		Start: 12
+		Length: 6
+	muzzle5: mgun-wsw
+		Length: *
+	muzzle6: minigun
+		Start: 18
+		Length: 6
+	muzzle7: mgun-ssw
+		Length: *
+	muzzle8: minigun
+		Start: 24
+		Length: 6
+	muzzle9: mgun-sse
+		Length: *
+	muzzle10: minigun
+		Start: 30
+		Length: 6
+	muzzle11: mgun-ese
+		Length: *
+	muzzle12: minigun
+		Start: 36
+		Length: 6
+	muzzle13: mgun-ene
+		Length: *
+	muzzle14: minigun
+		Start: 42
+		Length: 6
+	muzzle15: mgun-nne
+		Length: *
+	icon: heliicnh.tem
+		AddExtension: False
+
+orca:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	move:
+		Start: 32
+		Facings: 32
+		UseClassicFacingFudge: True
+	icon: orcaicnh.tem
+		AddExtension: False
+
+a10:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+#	muzzle: minigun
+#		Length: 6
+#		Facings: 8
+	muzzle0: minigun
+		Length: 6
+	muzzle1: mgun-nnw
+		Length: *
+	muzzle2: minigun
+		Start: 6
+		Length: 6
+	muzzle3: mgun-wnw
+		Length: *
+	muzzle4: minigun
+		Start: 12
+		Length: 6
+	muzzle5: mgun-wsw
+		Length: *
+	muzzle6: minigun
+		Start: 18
+		Length: 6
+	muzzle7: mgun-ssw
+		Length: *
+	muzzle8: minigun
+		Start: 24
+		Length: 6
+	muzzle9: mgun-sse
+		Length: *
+	muzzle10: minigun
+		Start: 30
+		Length: 6
+	muzzle11: mgun-ese
+		Length: *
+	muzzle12: minigun
+		Start: 36
+		Length: 6
+	muzzle13: mgun-ene
+		Length: *
+	muzzle14: minigun
+		Start: 42
+		Length: 6
+	muzzle15: mgun-nne
+		Length: *
+	icon: a10icnh.tem
+		AddExtension: False
+
+hind:
+	idle:
+		Facings: 32
+		UseClassicFacingFudge: True
+	rotor: lrotorlg
+		Length: 4
+	slow-rotor: lrotorlg
+		Start: 4
+		Length: 8
+#	muzzle: minigun
+#		Length: 6
+#		Facings: 8
+	muzzle0: minigun
+		Length: 6
+	muzzle1: mgun-nnw
+		Length: *
+	muzzle2: minigun
+		Start: 6
+		Length: 6
+	muzzle3: mgun-wnw
+		Length: *
+	muzzle4: minigun
+		Start: 12
+		Length: 6
+	muzzle5: mgun-wsw
+		Length: *
+	muzzle6: minigun
+		Start: 18
+		Length: 6
+	muzzle7: mgun-ssw
+		Length: *
+	muzzle8: minigun
+		Start: 24
+		Length: 6
+	muzzle9: mgun-sse
+		Length: *
+	muzzle10: minigun
+		Start: 30
+		Length: 6
+	muzzle11: mgun-ese
+		Length: *
+	muzzle12: minigun
+		Start: 36
+		Length: 6
+	muzzle13: mgun-ene
+		Length: *
+	muzzle14: minigun
+		Start: 42
+		Length: 6
+	muzzle15: mgun-nne
+		Length: *
+	icon: hindicnh.shp
+		AddExtension: False

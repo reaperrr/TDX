@@ -1,0 +1,9 @@
+MOD:
+Just make sure the "tdx" folder containing this and the other files is located in or copied to the /mods/ subfolder of your OpenRA installation directory.
+If the folder structure matches the official OpenRA mods ("E:/OpenRA/mods/tdx", for example), you should be good to go.
+
+CONTENT:
+TDX uses the base content from C&C1, so when prompted to do so, you can choose either Download or from CD, though Download is recommended due to speed and potential mod incompatibilities with non-english C&C CDs.
+
+MUSIC:
+Ignore the 'from CD' option, TDX uses stereo versions of several C&C tracks, always choose 'Download'.

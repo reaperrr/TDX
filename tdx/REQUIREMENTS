@@ -1,0 +1,3 @@
+TDX v0.5 requires OpenRA release 20160508 and is not compatible with older or newer OpenRA versions!
+
+I recommend installing each OpenRA release into a separate folder to keep the ability to play custom mods until they've been ported to newer OpenRA releases.

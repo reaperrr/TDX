@@ -12,6 +12,7 @@ linefire_b: In the Line of Fire (Sega Mix)
 	Extension: wav
 map1: Map Theme
 	Extension: wav
+	Hidden: true
 ind1: Industrial
 	Extension: wav
 mtd: March to Doom

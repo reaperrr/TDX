@@ -4,49 +4,53 @@ Bazooka:
 	MinRange: 0c512
 	Report: bazooka1.aud
 	ValidTargets: Ground, Water, Air
-	Projectile: BallisticMissile
-		Angle: 25
+	Projectile: MissileX
+		MinimumLaunchAngle: 25
 		Shadow: true
 		Arm: 1
 		LockOnProbability: 75
 		Blockable: false
 		Inaccuracy: 128
 		Image: DRAGON
-		RateOfTurn: 10
-		Trail: smokey
+		HorizontalRateOfTurn: 10
+		TrailImage: smokey
 		Speed: 256
-		RangeLimit: 40
-	Warhead@1Dam: SpreadDamage
+		RangeLimit: 6c0
+	Warhead@1Dam: SpreadDamageX
 		Spread: 128
 		Falloff: 100, 50, 25, 12, 0
-		Damage: 30
-		DeathType: 4
+		Damage: 300
 		ValidTargets: Ground, Water, Air
 		Versus:
-			None: 30
-			Wood: 65
+			None: 25
 			Light: 75
-#			Heavy: 100
+			Medium: 85
+			Wood: 65
+			Steel: 75
 			Concrete: 25
-#			AirLight: 100
-#			AirHeavy: 100
-	Warhead@2Smu: LeaveSmudge
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Smu: LeaveSmudgeX
 		SmudgeType: Crater
-	Warhead@3Eff: CreateEffect
-		Explosion: small_poof
-		ImpactSound: xplosml3.aud
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Tree, TibTree, Rock
+	Warhead@3Eff: CreateEffectX
+		Explosions: sml_poof
+		ImpactSounds: xplosml3.aud
 		InvalidImpactTypes: Water, Air, AirHit
 		ExplosionPalette: flashyeffect
-	Warhead@4Eff: CreateEffect
-		Explosion: small_building
-		ImpactSound: xplosml3.aud
+	Warhead@4Eff: CreateEffectX
+		Explosions: sml_building
+		ImpactSounds: xplosml3.aud
 		ValidImpactTypes: Air, AirHit
 		ExplosionPalette: flashyeffect
-	Warhead@5Eff: CreateEffect
-		Explosion: sml_splash
-		ImpactSound: ssplash3.aud
+	Warhead@5Eff: CreateEffectX
+		Explosions: sml_splash
+		ImpactSounds: ssplash3.aud
 		ExplosionPalette: effectra
 		ValidImpactTypes: Water
+	Warhead@5EffFlash: CreateEffectX
+		Explosions: flash3small
+		ExplosionPalette: alpha
+		InvalidImpactTypes: Water
 
 BikeRockets:
 	ReloadDelay: 60
@@ -55,102 +59,102 @@ BikeRockets:
 	Report: missile4.aud
 	ValidTargets: Ground, Water, Air
 	Burst: 2
-	BurstDelay: 20
-	Projectile: BallisticMissile
-		Angle: 30
+	BurstDelay: 30
+	Projectile: MissileX
+		MinimumLaunchAngle: 16
 		Shadow: true
 		Arm: 1
 		LockOnProbability: 75
 		Blockable: false
 		Inaccuracy: 128
 		Image: DRAGON
-		RateOfTurn: 10
-		Trail: smokey
+		HorizontalRateOfTurn: 10
+		TrailImage: smokey
 		Speed: 256
-		RangeLimit: 45
-	Warhead@1Dam: SpreadDamage
+		RangeLimit: 7c204
+	Warhead@1Dam: SpreadDamageX
 		Spread: 128
 		Falloff: 100, 50, 25, 12, 0
-		Damage: 30
-		DeathType: 4
+		Damage: 300
 		ValidTargets: Ground, Water, Air
 		Versus:
 			None: 25
-			Wood: 60
 			Light: 75
-#			Heavy: 100
+			Medium: 85
+			Wood: 60
+			Steel: 75
 			Concrete: 30
-#			AirLight: 100
-#			AirHeavy: 100
-	Warhead@2Smu: LeaveSmudge
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Smu: LeaveSmudgeX
 		SmudgeType: Crater
-	Warhead@3Eff: CreateEffect
-		Explosion: med_frag1
-		ImpactSound: xplomed1.aud
-		InvalidImpactTypes: Water, Air, Ground
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Tree, TibTree, Rock
+	Warhead@3Eff: CreateEffectX
+		Explosions: med_frag1
+		ImpactSounds: xplosml3.aud
+		InvalidImpactTypes: Water, Air
 		ExplosionPalette: flashyeffect
-	Warhead@4EffWater: CreateEffect
-		Explosion: sml_splash
-		ImpactSound: ssplash2.aud
+	Warhead@4EffWater: CreateEffectX
+		Explosions: sml_splash
+		ImpactSounds: ssplash2.aud
 		ExplosionPalette: effectra
 		ValidImpactTypes: Water
-	Warhead@5EffAir: CreateEffect
-		Explosion: small_building
-		ImpactSound: xplosml2.aud
+	Warhead@5EffAir: CreateEffectX
+		Explosions: sml_building
+		ImpactSounds: xplosml2.aud
 		ValidImpactTypes: Air
 		ExplosionPalette: flashyeffect
-	Warhead@6EffGround: CreateEffect
-		Explosion: dust
-		ImpactSound: expdirt1.aud
-		ExplosionPalette: terrain
-		ValidImpactTypes: Ground
+	Warhead@5EffFlash: CreateEffectX
+		Explosions: flash3small
+		ExplosionPalette: alpha
+		InvalidImpactTypes: Water
 
 OrcaAGMissiles:
-	ReloadDelay: 25
+	ReloadDelay: 35
 	Burst: 2
 	BurstDelay: 10
 	Range: 5c0
-	MinRange: 0c512
+	MinRange: 0c640
 	Report: bazooka1.aud
 	ValidTargets: Ground, Water
-	Projectile: BallisticMissile
-		Angle: 30
+	Projectile: MissileX
+		MinimumLaunchAngle: -16
 		Shadow: true
 		Arm: 1
 		LockOnProbability: 80
 		Blockable: false
 		Inaccuracy: 128
 		Image: DRAGON
-		RateOfTurn: 2
-		Trail: smokey
+		HorizontalRateOfTurn: 4
+		TrailImage: smokey
 		Speed: 256
-		RangeLimit: 50
-	Warhead@1Dam: SpreadDamage
+		RangeLimit: 6c0
+	Warhead@1Dam: SpreadDamageX
 		Spread: 128
 		Falloff: 100, 56, 28, 14, 0
-		Damage: 30
-		DeathType: 4
+		Damage: 300
 		ValidTargets: Ground, Water
 		Versus:
 			None: 25
 			Wood: 75
-#			Light: 100
-#			Heavy: 100
 			Concrete: 50
-#			AirLight: 100
-#			AirHeavy: 100
-	Warhead@2Smu: LeaveSmudge
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Smu: LeaveSmudgeX
 		SmudgeType: Crater
-	Warhead@3Eff: CreateEffect
-		Explosion: small_poof
-		ImpactSound: xplosml1.aud
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Tree, TibTree, Rock
+	Warhead@3Eff: CreateEffectX
+		Explosions: sml_poof
+		ImpactSounds: xplosml1.aud
 		InvalidImpactTypes: Water
 		ExplosionPalette: flashyeffect
-	Warhead@4Eff: CreateEffect
-		Explosion: sml_splash
-		ImpactSound: ssplash2.aud
+	Warhead@4Eff: CreateEffectX
+		Explosions: sml_splash
+		ImpactSounds: ssplash2.aud
 		ExplosionPalette: effectra
 		ValidImpactTypes: Water
+	Warhead@5EffFlash: CreateEffectX
+		Explosions: flash3small
+		ExplosionPalette: alpha
+		InvalidImpactTypes: Water
 
 OrcaAAMissiles:
 	ReloadDelay: 24
@@ -158,187 +162,198 @@ OrcaAAMissiles:
 	BurstDelay: 12
 	Range: 5c0
 	MinRange: 0c512
-	Report: BAZOOK1.AUD
+	Report: bazook1.aud
 	ValidTargets: Air
-	Projectile: BallisticMissile
-		Angle: 15
+	Projectile: MissileX
 		Shadow: true
 		Arm: 2
 		LockOnProbability: 75
 		Blockable: false
 		Inaccuracy: 128
 		Image: DRAGON
-		RateOfTurn: 10
-		Trail: smokey
+		HorizontalRateOfTurn: 10
+		TrailImage: smokey
 		Speed: 298
-		RangeLimit: 50
-	Warhead@1Dam: SpreadDamage
+		RangeLimit: 6c0
+	Warhead@1Dam: SpreadDamageX
 		Spread: 128
 		Falloff: 100, 56, 28, 14, 0
-		Damage: 25
-		DeathType: 4
+		Damage: 200
 		ValidTargets: Air
 		Versus:
-			AirLight: 75
-			AirHeavy: 50
-	Warhead@2Smu: LeaveSmudge
-		SmudgeType: Crater
-	Warhead@3Eff: CreateEffect
-		Explosion: small_building
-		ImpactSound: xplosml2.aud
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@3Eff: CreateEffectX
+		Explosions: sml_building
+		ImpactSounds: xplosml2.aud
 		ExplosionPalette: flashyeffect
+	Warhead@5EffFlash: CreateEffectX
+		Explosions: flash3small
+		ExplosionPalette: alpha
+		InvalidImpactTypes: Water
 
 MammothTusk:
-	ReloadDelay: 90
+	ReloadDelay: 125
 	Range: 5c0
-	MinRange: 0c512
-	Report: ROCKET1.AUD
+	MinRange: 0c640
+	Report: rocket1.aud
 	ValidTargets: Ground, Water, Air
 	Burst: 2
-	BurstDelay: 15
-	Projectile: BallisticMissile
-		Angle: 30
+	BurstDelay: 20
+	Projectile: MissileX
+		MinimumLaunchAngle: 30
 		Shadow: true
-		Arm: 2
-		LockOnProbability: 70
+		Arm: 1
+		LockOnProbability: 60
 		Blockable: false
-		Inaccuracy: 128
+		Inaccuracy: 640
 		Image: DRAGON
-		RateOfTurn: 10
-		Trail: smokey
+		HorizontalRateOfTurn: 9
+		TrailImage: smokey
 		Speed: 213
-		RangeLimit: 35
-	Warhead@1Dam: SpreadDamage
+		RangeLimit: 6c0
+	Warhead@1Dam: SpreadDamageX
 		Spread: 256
-		Falloff: 100, 75, 50, 35, 20, 0
-		Damage: 50
-		DeathType: 4
+		Falloff: 100, 70, 40, 0
+		Damage: 650
 		ValidTargets: Ground, Water, Air
 		Versus:
 			None: 50
-			Wood: 65
 			Light: 100
+			Medium: 50
 			Heavy: 25
+			Wood: 50
+			Steel: 40
 			Concrete: 30
-			AirLight: 75
-			AirHeavy: 40
-	Warhead@2Smu: LeaveSmudge
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Smu: LeaveSmudgeX
 		SmudgeType: Crater
-	Warhead@3Eff: CreateEffect
-		Explosion: small_poof
-		ImpactSound: xplomed1.aud
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Tree, TibTree, Rock
+	Warhead@3Eff: CreateEffectX
+		Explosions: sml_poof
+		ImpactSounds: xplomed1.aud
 		InvalidImpactTypes: Air, AirHit, Water
 		ExplosionPalette: flashyeffect
-	Warhead@4EffAir: CreateEffect
-		Explosion: small_building
-		ImpactSound: xplosml2.aud
+	Warhead@4EffAir: CreateEffectX
+		Explosions: sml_building
+		ImpactSounds: xplosml2.aud
 		ValidImpactTypes: Air, AirHit
 		ExplosionPalette: flashyeffect
-	Warhead@5EffWater: CreateEffect
-		Explosion: sml_splash
-		ImpactSound: ssplash2.aud
+	Warhead@5EffWater: CreateEffectX
+		Explosions: sml_splash
+		ImpactSounds: ssplash2.aud
 		ExplosionPalette: effectra
 		ValidImpactTypes: Water
+	Warhead@5EffFlash: CreateEffectX
+		Explosions: flash3small
+		ExplosionPalette: alpha
+		InvalidImpactTypes: Water
 
 227mm:
 	ReloadDelay: 100
-	Range: 10c0
-	MinRange: 3c0
+	Range: 8c0
+	MinRange: 2c640
 	Burst: 2
 	BurstDelay: 20
 	Report: missile2.aud
-	ValidTargets: Ground, Water
-	Projectile: BallisticMissile
+	Projectile: MissileX
 		Arm: 2
 		LockOnProbability: 50
 		Shadow: true
 		Inaccuracy: 853
-		Angle: 65
+		MinimumLaunchAngle: 65
 		Image: MISSILE
-		RateOfTurn: 2
-		Trail: smokey
+		HorizontalRateOfTurn: 2
+		TrailImage: smokey
 		Speed: 256
-	Warhead@1Dam: SpreadDamage
+		RangeLimit: 9c614
+	Warhead@1Dam: SpreadDamageX
 		Spread: 341
-		Falloff: 100, 80, 60, 40, 20, 0
-		Damage: 75
-		DeathType: 4
-		ValidTargets: Ground, Water
+		Falloff: 100, 80, 60, 30, 0
+		Damage: 750
 		Versus:
-#			None: 100
-			Wood: 90
 			Light: 50
+			Medium: 35
 			Heavy: 25
+			Wood: 90
+			Steel: 50
 			Concrete: 30
-			AirLight: 75
-			AirHeavy: 50
-	Warhead@2Smu: LeaveSmudge
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Smu: LeaveSmudgeX
 		SmudgeType: Crater
-	Warhead@3Eff: CreateEffect
-		Explosion: big_frag
-		ImpactSound: xplomed1.aud
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Tree, TibTree, Rock
+	Warhead@3Eff: CreateEffectX
+		Explosions: big_frag
+		ImpactSounds: xplomed1.aud
 		InvalidImpactTypes: Water, Air, AirHit
 		ExplosionPalette: flashyeffect
-	Warhead@4Eff: CreateEffect
-		Explosion: med_splash
-		ImpactSound: ssplash1.aud
+	Warhead@4Eff: CreateEffectX
+		Explosions: med_splash
+		ImpactSounds: ssplash1.aud
 		ExplosionPalette: effectra
 		ValidImpactTypes: Water
-	Warhead@5Eff: CreateEffect
-		Explosion: med_frag
-		ImpactSound: xplomed2.aud
+	Warhead@5Eff: CreateEffectX
+		Explosions: med_frag
+		ImpactSounds: xplomed2.aud
 		ValidImpactTypes: Air, AirHit
 		ExplosionPalette: flashyeffect
+	Warhead@5EffFlash: CreateEffectX
+		Explosions: flash3
+		ExplosionPalette: alpha
+		InvalidImpactTypes: Water
 
 227mmAA:
 	ReloadDelay: 100
 	Range: 10c0
 	MinRange: 2c0
 	Burst: 2
-	BurstDelay: 25
+	BurstDelay: 20
 	Report: missile2.aud
 	ValidTargets: Air
-	Projectile: BallisticMissile
-		Angle: 15
-		Arm: 3
-		LockOnProbability: 60
+	Projectile: MissileX
+		MinimumLaunchAngle: 16
+		Arm: 2
+		LockOnProbability: 67
 		Shadow: true
-		Inaccuracy: 768
+		Inaccuracy: 512
 		Image: MISSILE
-		RateOfTurn: 4
-		Trail: smokey
+		HorizontalRateOfTurn: 8
+		VerticalRateOfTurn: 8
+		TrailImage: smokey
 		Speed: 256
-	Warhead@1Dam: SpreadDamage
+		RangeLimit: 12c0
+	Warhead@1Dam: SpreadDamageX
 		Spread: 384
-		Falloff: 100, 75, 50, 25, 0
-		Damage: 75
-		DeathType: 4
+		Falloff: 100, 75, 50, 0
+		Damage: 750
 		ValidTargets: Air
 		Versus:
-#			None: 100
 			Wood: 30
-			Light: 30
-			Heavy: 20
-#			AirLight: 100
-#			AirHeavy: 100
+			Steel: 25
 			Concrete: 20
-	Warhead@2Smu: LeaveSmudge
+			Heavy: 50
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Smu: LeaveSmudgeX
 		SmudgeType: Crater
-	Warhead@3Eff: CreateEffect
-		Explosion: big_frag
-		ImpactSound: xplomed1.aud
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Tree, TibTree, Rock
+	Warhead@3Eff: CreateEffectX
+		Explosions: big_frag
+		ImpactSounds: xplomed1.aud
 		InvalidImpactTypes: Water, Air, AirHit
 		ExplosionPalette: flashyeffect
-	Warhead@4Eff: CreateEffect
-		Explosion: med_splash
-		ImpactSound: ssplash1.aud
+	Warhead@4Eff: CreateEffectX
+		Explosions: med_splash
+		ImpactSounds: ssplash1.aud
 		ExplosionPalette: effectra
 		ValidImpactTypes: Water
-	Warhead@5Eff: CreateEffect
-		Explosion: med_frag
-		ImpactSound: xplomed2.aud
+	Warhead@5Eff: CreateEffectX
+		Explosions: med_frag
+		ImpactSounds: xplomed2.aud
 		ValidImpactTypes: Air, AirHit
 		ExplosionPalette: flashyeffect
+	Warhead@5EffFlash: CreateEffectX
+		Explosions: flash5
+		ExplosionPalette: alpha
+		InvalidImpactTypes: Water
 
 Dragon:
 	ReloadDelay: 60
@@ -348,44 +363,47 @@ Dragon:
 	Burst: 2
 	BurstDelay: 15
 	ValidTargets: Ground, Water, Air
-	Projectile: BallisticMissile
-		Angle: 30
+	Projectile: MissileX
+		MinimumLaunchAngle: 16
 		Shadow: true
 		Arm: 2
 		LockOnProbability: 90
 		Blockable: false
 		Inaccuracy: 213
 		Image: DRAGON
-		RateOfTurn: 10
-		Trail: smokey
+		HorizontalRateOfTurn: 10
+		TrailImage: smokey
 		Speed: 213
-		RangeLimit: 60
-	Warhead@1Dam: SpreadDamage
+		RangeLimit: 7c204
+	Warhead@1Dam: SpreadDamageX
 		Spread: 128
 		Falloff: 100, 50, 25, 12, 0
-		Damage: 35
-		DeathType: 4
+		Damage: 350
 		ValidTargets: Ground, Water, Air
 		Versus:
 			None: 25
-			Wood: 75
-			Light: 90
-#			Heavy: 100
+			Wood: 70
+			Steel: 50
 			Concrete: 30
-#			AirLight: 100
-#			AirHeavy: 100
-	Warhead@2Smu: LeaveSmudge
+			Light: 90
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Smu: LeaveSmudgeX
 		SmudgeType: Crater
-	Warhead@3Eff: CreateEffect
-		Explosion: med_frag1
-		ImpactSound: xplomed2.aud
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Tree, TibTree, Rock
+	Warhead@3Eff: CreateEffectX
+		Explosions: med_frag1
+		ImpactSounds: xplomed2.aud
 		InvalidImpactTypes: Water
 		ExplosionPalette: flashyeffect
-	Warhead@4Eff: CreateEffect
-		Explosion: sml_splash
-		ImpactSound: ssplash2.aud
+	Warhead@4Eff: CreateEffectX
+		Explosions: sml_splash
+		ImpactSounds: ssplash2.aud
 		ExplosionPalette: effectra
 		ValidImpactTypes: Water
+	Warhead@5EffFlash: CreateEffectX
+		Explosions: flash3small
+		ExplosionPalette: alpha
+		InvalidImpactTypes: Water
 
 BoatMissile:
 	ReloadDelay: 45
@@ -394,130 +412,143 @@ BoatMissile:
 	Burst: 2
 	BurstDelay: 15
 	Report: missile3.aud
-	Projectile: BallisticMissile
-		Angle: 30
+	ValidTargets: Ground, Water, Air
+	Projectile: MissileX
+		MinimumLaunchAngle: 30
 		Shadow: true
 		Arm: 2
 		LockOnProbability: 65
 		Blockable: false
 		Inaccuracy: 768
 		Image: DRAGON
-		RateOfTurn: 3
-		Trail: smokey
+		HorizontalRateOfTurn: 3
+		TrailImage: smokey
 		Speed: 170
-		RangeLimit: 60
-	Warhead@1Dam: SpreadDamage
+		RangeLimit: 12c0
+	Warhead@1Dam: SpreadDamageX
 		Spread: 384
-		Falloff: 100, 75, 50, 30, 15, 0
-		Damage: 60
-		DeathType: 3
+		Falloff: 100, 75, 50, 0
+		Damage: 600
+		ValidTargets: Ground, Water, Air
 		Versus:
 			None: 90
 			Wood: 75
+			Steel: 85
 			Light: 60
+			Medium: 50
 			Heavy: 25
-#			Concrete: 100
-			AirLight: 60
-			AirHeavy: 50
-	Warhead@2Smu: LeaveSmudge
+		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
+	Warhead@2Smu: LeaveSmudgeX
 		SmudgeType: Crater
-	Warhead@3Eff: CreateEffect
-		Explosion: med_frag1
-		ImpactSound: xplomed1.aud
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Tree, TibTree, Rock
+	Warhead@3Eff: CreateEffectX
+		Explosions: med_frag1
+		ImpactSounds: xplomed1.aud
 		InvalidImpactTypes: Air, AirHit, Water
 		ExplosionPalette: flashyeffect
-	Warhead@4EffAir: CreateEffect
-		Explosion: small_building
-		ImpactSound: xplosml2.aud
+	Warhead@4EffAir: CreateEffectX
+		Explosions: sml_building
+		ImpactSounds: xplosml2.aud
 		ValidImpactTypes: Air, AirHit
 		ExplosionPalette: flashyeffect
-	Warhead@5EffWater: CreateEffect
-		Explosion: sml_splash
-		ImpactSound: ssplash2.aud
+	Warhead@5EffWater: CreateEffectX
+		Explosions: sml_splash
+		ImpactSounds: ssplash2.aud
 		ExplosionPalette: effectra
 		ValidImpactTypes: Water
+	Warhead@5EffFlash: CreateEffectX
+		Explosions: flash3
+		ExplosionPalette: alpha
+		InvalidImpactTypes: Water
 
 TowerMissile:
-	ReloadDelay: 75
+	ReloadDelay: 65
 	Burst: 2
-	BurstDelay: 20
+	BurstDelay: 25
 	Range: 7c0
 	MinRange: 0c768
 	Report: missile3.aud
 	ValidTargets: Ground, Air, Water
-	Projectile: BallisticMissile
-		Angle: 30
+	Projectile: MissileX
+		MinimumLaunchAngle: -32
 		Shadow: true
-		Arm: 3
+		Arm: 2
 		Blockable: false
 		Inaccuracy: 768
 		Image: DRAGON
-		RateOfTurn: 5
-		Trail: smokey
+		HorizontalRateOfTurn: 5
+		TrailImage: smokey
 		Speed: 256
 		CloseEnough: 341
-		RangeLimit: 50
-	Warhead@1Dam: SpreadDamage
-		Range: 0, 513, 769, 1c1, 1c257, 1c768
-		Falloff: 100, 80, 60, 40, 20, 0
-		Damage: 60
+		RangeLimit: 8c409
+	Warhead@1Dam: SpreadDamageX
+		Range: 0, 512, 768, 1c256
+		Falloff: 100, 75, 50, 0
+		Damage: 600
 		ValidTargets: Ground, Water, Air
-		DeathType: 3
 		Versus:
 			None: 60
-			Wood: 25
-#			Light: 100
-			Heavy: 40
-			Concrete: 20
-			AirLight: 75
-			AirHeavy: 50
-	Warhead@2Smu: LeaveSmudge
+			Wood: 45
+			Steel: 35
+			Concrete: 25
+			Medium: 65
+			Heavy: 35
+		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
+	Warhead@2Smu: LeaveSmudgeX
 		SmudgeType: Crater
-	Warhead@3Eff: CreateEffect
-		Explosion: med_frag
-		ImpactSound: xplobig1.aud
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Tree, TibTree, Rock
+	Warhead@3Eff: CreateEffectX
+		Explosions: med_frag
+		ImpactSounds: xplobig1.aud
 		InvalidImpactTypes: Water
 		ExplosionPalette: flashyeffect
-	Warhead@4Eff: CreateEffect
-		Explosion: sml_splash
-		ImpactSound: ssplash2.aud
+	Warhead@4Eff: CreateEffectX
+		Explosions: sml_splash
+		ImpactSounds: ssplash2.aud
 		ExplosionPalette: effectra
 		ValidImpactTypes: Water
+	Warhead@5EffFlash: CreateEffectX
+		Explosions: flash3
+		ExplosionPalette: alpha
+		InvalidImpactTypes: Water
 
 SAMMissile:
-	ReloadDelay: 15
+	ReloadDelay: 100
+	BurstDelay: 25
+	Burst: 2
 	Range: 8c0
 	MinRange: 0c512
 	Report: missile6.aud
 	ValidTargets: Air
-	Projectile: Missile
+	Projectile: MissileX
 		Arm: 2
+		Shadow: true
 		Blockable: false
 		Image: MISSILE
-		RateOfTurn: 5
+		HorizontalRateOfTurn: 5
 		Speed: 341
-		CloseEnough: 384
-		RangeLimit: 75
-		Trail: smokey
-	Warhead@1Dam: SpreadDamage
+		CloseEnough: 375
+		RangeLimit: 9c614
+		TrailImage: smokey
+	Warhead@1Dam: SpreadDamageX
 		Range: 0, 384, 512, 768, 1c0
-		Falloff: 100, 100, 60, 30, 0
+		Falloff: 100, 100, 50, 25, 0
 		ValidTargets: Air
 		Versus:
-#			AirLight: 100
-			AirHeavy: 75
-		DeathType: 4
-		Damage: 30
-	Warhead@2Smu: LeaveSmudge
-		SmudgeType: Crater
-	Warhead@3Eff: CreateEffect
-		Explosion: small_building
-		ImpactSound: xplosml2.aud
+		Damage: 500
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@3Eff: CreateEffectX
+		Explosions: sml_building
+		ImpactSounds: xplosml2.aud
 		ExplosionPalette: flashyeffect
+	Warhead@5EffFlash: CreateEffectX
+		Explosions: flash3small
+		ExplosionPalette: alpha
+		InvalidImpactTypes: Water
 
 HonestJohn:
-	ReloadDelay: 50
-	BurstDelay: 50
+	ReloadDelay: 100
+	BurstDelay: 100
 	Burst: 2
 	Range: 16c0
 	MinRange: 4c0
@@ -529,24 +560,27 @@ HonestJohn:
 		Image: missile2
 		Trail: smokey
 		Speed: 192
-		Angle: 90
+		Angle: 75
 		Palette: effectra
-	Warhead@1Dam: SpreadDamage
-		Range: 0, 385, 513, 769, 1c1, 1c513, 2c0
-		Falloff: 100, 100, 80, 48, 24, 12, 0
-		Damage: 200
-		DeathType: 5
+	Warhead@1Dam: SpreadDamageX
+		Range: 0, 384, 512, 768, 1c0, 1c512
+		Falloff: 100, 80, 48, 24, 12, 0
+		Damage: 2000
 		Versus:
-#			None: 100
-			Wood: 110
 			Light: 65
+			Medium: 45
 			Heavy: 25
+			Wood: 115
+			Steel: 75
 			Concrete: 35
-			AirLight: 65
-			AirHeavy: 35
-	Warhead@2Smu: LeaveSmudge
-		SmudgeType: Crater
-	Warhead@3Eff: CreateEffect
-		Explosion: big_ranapalm
-		ImpactSound: flamer2.aud
+		DamageTypes: Prone50Percent, TriggerProne, FireDeath
+	Warhead@2Smu: LeaveSmudgeX
+		SmudgeType: Scorch
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Tree, TibTree, Rock
+	Warhead@3Eff: CreateEffectX
+		Explosions: big_ranapalm
+		ImpactSounds: flamer2.aud
 		ExplosionPalette: flashyeffectra
+	Warhead@5EffFlash: CreateEffectX
+		Explosions: flash3
+		ExplosionPalette: alpha

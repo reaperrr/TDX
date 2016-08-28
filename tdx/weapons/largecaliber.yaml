@@ -1,0 +1,364 @@
+Grenade:
+	ReloadDelay: 60
+	Range: 4c0
+	Projectile: Bullet
+		Speed: 119
+		Blockable: false
+		Angle: 62
+		Inaccuracy: 213
+		Image: BOMB
+		Shadow: true
+	Warhead@1Dam: SpreadDamageX
+		Spread: 256
+		Falloff: 100, 60, 30, 15, 0
+		Damage: 500
+		Versus:
+			None: 75
+			Wood: 65
+			Steel: 50
+			Light: 75
+			Medium: 60
+			Heavy: 35
+		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
+	Warhead@2Smu: LeaveSmudgeX
+		SmudgeType: Crater
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Tree, TibTree, Rock
+	Warhead@3Eff: CreateEffectX
+		Explosions: sml_poof
+		ImpactSounds: xplosml1.aud
+		InvalidImpactTypes: Water
+		ExplosionPalette: flashyeffect
+	Warhead@4Eff: CreateEffectX
+		Explosions: sml_splash
+		ImpactSounds: ssplash3.aud
+		ExplosionPalette: effectra
+		ValidImpactTypes: Water
+	Warhead@5EffFlash: CreateEffectX
+		Explosions: flash5
+		ExplosionPalette: alpha
+		InvalidImpactTypes: Water
+
+RPGLauncher:
+	ReloadDelay: 100
+	Range: 10c0
+	MinRange: 1c384
+	Burst: 6
+	BurstDelay: 10
+	Report: grenlnch.aud
+	Projectile: Bullet
+		Blockable: false
+		Shadow: true
+		Inaccuracy: 1c512
+		Angle: 75
+		Image: BOMB
+		Speed: 298
+	Warhead@1Dam: SpreadDamageX
+		Spread: 256
+		Falloff: 100, 70, 45, 20, 0
+		Damage: 400
+		Versus:
+			None: 50
+			Wood: 65
+			Light: 75
+			Medium: 65
+			Heavy: 50
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Smu: LeaveSmudgeX
+		SmudgeType: Crater
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Tree, TibTree, Rock
+	Warhead@3Eff: CreateEffectX
+		Explosions: sml_poof
+		ImpactSounds: xplomed1.aud
+		InvalidImpactTypes: Water
+		ExplosionPalette: flashyeffect
+	Warhead@4Eff: CreateEffectX
+		Explosions: sml_splash
+		ImpactSounds: ssplash2.aud
+		ExplosionPalette: effectra
+		ValidImpactTypes: Water
+	Warhead@5EffFlash: CreateEffectX
+		Explosions: flash5
+		ExplosionPalette: alpha
+		InvalidImpactTypes: Water
+
+70mm:
+	ReloadDelay: 45
+	Range: 4c256
+	Report: cannon3.aud
+	Projectile: Bullet
+		Image: 120MM
+		Speed: 640
+		Shadow: true
+		Palette: flashyeffect
+	Warhead@1Dam: SpreadDamageX
+		Spread: 85
+		Falloff: 100, 40, 20, 10, 0
+		Damage: 250
+		Versus:
+			None: 30
+			Heavy: 75
+			Wood: 75
+			Steel: 55
+			Concrete: 35
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Smu: LeaveSmudgeX
+		SmudgeType: Crater
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Tree, TibTree, Rock
+	Warhead@3Eff: CreateEffectX
+		Explosions: sml_frag
+		ImpactSounds: xplosml1.aud
+		InvalidImpactTypes: Water
+		ExplosionPalette: flashyeffect
+	Warhead@4Eff: CreateEffectX
+		Explosions: sml_splash
+		ImpactSounds: ssplash3.aud
+		ExplosionPalette: effectra
+		ValidImpactTypes: Water
+	Warhead@5EffFlash: CreateEffectX
+		Explosions: flash3small
+		ExplosionPalette: alpha
+		InvalidImpactTypes: Water
+
+100mmDual:
+	ReloadDelay: 70
+	Burst: 2
+	BurstDelay: 10
+	Range: 5c0
+	Report: cannon4.aud
+	Projectile: Bullet
+		Image: 120MM
+		Speed: 600
+		Shadow: true
+		Palette: flashyeffect
+	Warhead@1Dam: SpreadDamageX
+		Spread: 128
+		Falloff: 100, 40, 20, 10, 0
+		Damage: 300
+		Versus:
+			None: 25
+			Wood: 50
+			Steel: 65
+			Concrete: 50
+			Light: 75
+			Medium: 85
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Smu: LeaveSmudgeX
+		SmudgeType: Crater
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Tree, TibTree, Rock
+	Warhead@3Eff: CreateEffectX
+		Explosions: sml_frag
+		ImpactSounds: xplosml1.aud
+		InvalidImpactTypes: Water
+		ExplosionPalette: flashyeffect
+	Warhead@4EffWater: CreateEffectX
+		Explosions: sml_splash
+		ImpactSounds: ssplash2.aud
+		ExplosionPalette: effectra
+		ValidImpactTypes: Water
+	Warhead@5EffFlash: CreateEffectX
+		Explosions: flash3small
+		ExplosionPalette: alpha
+		InvalidImpactTypes: Water
+
+105mm:
+	ReloadDelay: 60
+	Range: 5c0
+	Report: cannon5.aud
+	Projectile: Bullet
+		Image: 120MM
+		Speed: 600
+		Shadow: true
+		Palette: flashyeffect
+	Warhead@1Dam: SpreadDamageX
+		Spread: 128
+		Falloff: 100, 40, 20, 10, 0
+		Damage: 350
+		Versus:
+			None: 25
+			Wood: 50
+			Steel: 70
+			Concrete: 50
+			Light: 75
+			Medium: 90
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Smu: LeaveSmudgeX
+		SmudgeType: Crater
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Tree, TibTree, Rock
+	Warhead@3Eff: CreateEffectX
+		Explosions: sml_frag
+		ImpactSounds: xplosml1.aud
+		InvalidImpactTypes: Water
+		ExplosionPalette: flashyeffect
+	Warhead@4EffWater: CreateEffectX
+		Explosions: sml_splash
+		ImpactSounds: ssplash2.aud
+		ExplosionPalette: effectra
+		ValidImpactTypes: Water
+#	Warhead@5EffDust: CreateEffectX
+#		Explosions: dust
+#		ImpactSounds: xplosml1.aud
+#		ExplosionPalette: terrain
+#		ValidImpactTypes: Ground
+	Warhead@5EffFlash: CreateEffectX
+		Explosions: flash3small
+		ExplosionPalette: alpha
+		InvalidImpactTypes: Water
+
+120mm:
+	ReloadDelay: 60
+	Range: 5c0
+	Report: cannon5.aud
+	Projectile: Bullet
+		Image: 120MM
+		Speed: 600
+		Shadow: true
+		Palette: flashyeffect
+	Warhead@1Dam: SpreadDamageX
+		Spread: 128
+		Falloff: 100, 40, 20, 10, 0
+		Damage: 400
+		Versus:
+			None: 30
+			Wood: 60
+			Steel: 75
+			Concrete: 50
+			Light: 75
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Smu: LeaveSmudgeX
+		SmudgeType: Crater
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Tree, TibTree, Rock
+	Warhead@3Eff: CreateEffectX
+		Explosions: med_frag1
+		ImpactSounds: xplosml3.aud
+		InvalidImpactTypes: Water
+		ExplosionPalette: flashyeffect
+	Warhead@4EffWater: CreateEffectX
+		Explosions: sml_splash
+		ImpactSounds: ssplash2.aud
+		ExplosionPalette: effectra
+		ValidImpactTypes: Water
+	Warhead@5EffFlash: CreateEffectX
+		Explosions: flash3small
+		ExplosionPalette: alpha
+		InvalidImpactTypes: Water
+
+120mmDual:
+	ReloadDelay: 80
+	Range: 5c0
+	Report: cannon6.aud
+	Burst: 2
+	BurstDelay: 15
+	Projectile: Bullet
+		Image: 120MM
+		Speed: 600
+		Shadow: true
+		Palette: flashyeffect
+	Warhead@1Dam: SpreadDamageX
+		Spread: 128
+		Falloff: 100, 40, 20, 10, 0
+		Damage: 400
+		Versus:
+			None: 25
+			Wood: 50
+			Concrete: 50
+			Light: 75
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Smu: LeaveSmudgeX
+		SmudgeType: Crater
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Tree, TibTree, Rock
+	Warhead@3Eff: CreateEffectX
+		Explosions: med_frag1
+		ImpactSounds: xplosml3.aud
+		InvalidImpactTypes: Water
+		ExplosionPalette: flashyeffect
+	Warhead@4EffWater: CreateEffectX
+		Explosions: sml_splash
+		ImpactSounds: ssplash2.aud
+		ExplosionPalette: effectra
+		ValidImpactTypes: Water
+	Warhead@5EffFlash: CreateEffectX
+		Explosions: flash3small
+		ExplosionPalette: alpha
+		InvalidImpactTypes: Water
+
+TurretGun:
+	ReloadDelay: 50
+	Range: 6c0
+	Report: cannon7.aud
+	Projectile: Bullet
+		Image: 120MM
+		Speed: 640
+		Shadow: true
+		Palette: flashyeffect
+	Warhead@1Dam: SpreadDamageX
+		Spread: 128
+		Falloff: 100, 40, 20, 10, 0
+		Damage: 400
+		Versus:
+			None: 25
+			Wood: 25
+			Steel: 30
+			Concrete: 30
+			Light: 75
+			Medium: 85
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Smu: LeaveSmudgeX
+		SmudgeType: Crater
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Tree, TibTree, Rock
+	Warhead@3Eff: CreateEffectX
+		Explosions: med_frag1
+		ImpactSounds: xplosml3.aud
+		InvalidImpactTypes: Water
+		ExplosionPalette: flashyeffect
+	Warhead@4EffWater: CreateEffectX
+		Explosions: sml_splash
+		ImpactSounds: ssplash2.aud
+		ExplosionPalette: effectra
+		ValidImpactTypes: Water
+	Warhead@5EffFlash: CreateEffectX
+		Explosions: flash3small
+		ExplosionPalette: alpha
+		InvalidImpactTypes: Water
+
+155mm:
+	ReloadDelay: 65
+	Range: 10c0
+	MinRange: 1c640
+	Report: artyfire.aud
+	Projectile: Bullet
+		Speed: 256
+		Blockable: false
+		Inaccuracy: 1c256
+		Angle: 60
+		Image: 120MM
+		Palette: flashyeffect
+		Shadow: true
+	Warhead@1Dam: SpreadDamageX
+		Spread: 384
+		Falloff: 100, 60, 30, 15, 0
+		Damage: 1500
+		Versus:
+			None: 80
+			Wood: 75
+			Steel: 65
+			Light: 90
+			Medium: 70
+			Heavy: 40
+		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
+	Warhead@2Smu: LeaveSmudgeX
+		SmudgeType: Crater
+		InvalidTargets: Vehicle, Structure, Wall, Husk, Tree, TibTree, Rock
+	Warhead@3Eff: CreateEffectX
+		Explosions: poof
+		ImpactSounds: xploarty.aud
+		InvalidImpactTypes: Water
+		ExplosionPalette: flashyeffect
+	Warhead@4Eff: CreateEffectX
+		Explosions: big_splash
+		ImpactSounds: ssplash1.aud
+		ExplosionPalette: effectra
+		ValidImpactTypes: Water
+	Warhead@5EffFlash: CreateEffectX
+		Explosions: flash3
+		ExplosionPalette: alpha
+		InvalidImpactTypes: Water

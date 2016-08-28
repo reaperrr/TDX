@@ -1,0 +1,32 @@
+World:
+	-SpawnMPUnits:
+	-MPStartLocations:
+	-CrateSpawner:
+	WorldPaletteEffect:
+		DayNightCycle: true
+		InitialEffect: Evening
+		MorningDayTransitionLength: 300
+		DayLength: 600
+		DayEveningTransitionLength: 300
+		EveningNightTransitionLength: 300
+		NightLength: 450
+		NightMorningTransitionLength: 300
+		DaylightFactorRed: 105
+		DaylightFactorGreen: 110
+		DaylightFactorBlue: 110
+	LuaScript:
+		Scripts: shellmap.lua
+	MusicPlaylist:
+		BackgroundMusic: map1
+
+#155mm:
+#	ReloadDelay: 65
+#	Range: 14c512
+
+LST:
+	Mobile:
+		Speed: 42
+
+BOAT:
+	Mobile:
+		Speed: 42
