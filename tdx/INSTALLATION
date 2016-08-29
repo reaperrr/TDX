@@ -1,6 +1,16 @@
 MOD:
-Just make sure the "tdx" folder containing this and the other files is located in or copied to the /mods/ subfolder of your OpenRA installation directory.
-If the folder structure matches the official OpenRA mods ("E:/OpenRA/mods/tdx", for example), you should be good to go.
+>>>
+IMPORTANT!
+> If you previously downloaded and installed the original release 0.50, delete it from the 'mods' subfolder located in OpenRA's installation directory before proceeding!
+> Otherwise newer versions of TDX will NOT work properly (or at all)!
+>>>
+
+Installation from version 0.51 onwards works as follows:
+1. Go to your systems' "My Documents\OpenRA" or equivalent (MacOSX: ~/Library/Application Support/OpenRA/ --- Linux: ~/.openra/)
+2. Check if there is a 'mods' subfolder amongst the other OpenRA system folders (maps, Replays etc.). If yes, skip 3. and proceed with 4.
+3. Create a new 'mods' folder.
+4. Copy tdx.oramod into that folder. Overwrite any older tdx.oramod, if present.
+5. Launch the game. If TDX can be selected and loads successfully, you're done.
 
 CONTENT:
 TDX uses the base content from C&C1, so when prompted to do so, you can choose either Download or from CD, though Download is recommended due to speed and potential mod incompatibilities with non-english C&C CDs.
