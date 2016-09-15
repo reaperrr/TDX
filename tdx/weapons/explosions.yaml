@@ -180,6 +180,7 @@ Napalm.Crate:
 			Steel: 60
 			Concrete: 25
 		DamageTypes: Prone50Percent, TriggerProne, FireDeath
+		AffectsParent: true
 	Warhead@2Smu: LeaveSmudgeX
 		SmudgeType: Scorch
 		InvalidTargets: Structure, Wall, Tree, TibTree, Rock
