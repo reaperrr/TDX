@@ -81,12 +81,17 @@ Laser:
 	ReloadDelay: 1
 	Range: 7c512
 	Report: obelray1.aud
-	Projectile: LaserZap
-		BeamWidth: 2
+	Projectile: LaserZapX
+		Width: 43
+		ZOffset: 2048
+		Color: FF0000A0
+		BeamDuration: 15
+		SecondaryBeamWidth: 213
+		SecondaryBeamColor: FF000048
+		SecondaryBeamZOffset: 2048
 		HitAnim: explosion
 		HitAnimSequence: flash3
 		HitAnimPalette: alpha
-		ZOffset: 2048
 	Warhead@1Dam: SpreadDamageX
 		Spread: 43
 		Damage: 2000
