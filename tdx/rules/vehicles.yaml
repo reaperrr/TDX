@@ -650,6 +650,9 @@ NAPC:
 		PipCount: 5
 	SelectionDecorations:
 		VisualBounds: 26,26
+	Explodes:
+		Weapon: UnitExplodeSmall
+		EmptyWeapon: UnitExplodeSmall
 
 MRPG:
 	Inherits: ^Tank
