@@ -72,6 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Effects\MissileX.cs" />
+    <Compile Include="Effects\LaserZapX.cs" />
     <Compile Include="Traits\UpgradeOnDamage.cs" />
     <Compile Include="Traits\WorldPaletteEffect.cs" />
     <Compile Include="Traits\IdleWander.cs" />
