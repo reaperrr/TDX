@@ -626,7 +626,7 @@ NAPC:
 		TurnSpeed: 8
 		Speed: 150
 	Health:
-		HP: 2000
+		HP: 2200
 		Shape: Rectangle
 			TopLeft: -256, -341
 			BottomRight: 256, 341

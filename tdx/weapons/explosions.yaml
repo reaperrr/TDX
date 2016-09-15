@@ -25,7 +25,6 @@ ChemtankExplode:
 		Spread: 512
 		Falloff: 100, 60, 30, 0
 		Versus:
-			Wood: 90
 			Light: 75
 			Medium: 55
 			Heavy: 40
@@ -71,7 +70,7 @@ UnitExplode:
 	Warhead@1Dam: SpreadDamageX
 		Spread: 384
 		Damage: 1500
-		Falloff: 100, 40, 20, 10, 5, 0
+		Falloff: 100, 40, 20, 10, 0
 		Versus:
 			None: 90
 			Wood: 75
@@ -91,13 +90,15 @@ UnitExplode:
 
 UnitExplodeSmall:
 	Warhead@1Dam: SpreadDamageX
-		Spread: 426
-		Falloff: 100, 40, 20, 10, 5, 0
+		Spread: 384
+		Falloff: 100, 40, 20, 10, 0
 		Damage: 400
 		Versus:
 			None: 90
 			Wood: 75
+			Steel: 80
 			Light: 60
+			Medium: 40
 			Heavy: 25
 		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
 	Warhead@2Eff: CreateEffectX

@@ -109,7 +109,7 @@ Pistol:
 
 M16:
 	ReloadDelay: 20
-	Range: 4c0
+	Range: 3c256
 	InvalidTargets: Wall
 	Report: minigun2.aud
 	Projectile: Bullet
@@ -121,10 +121,10 @@ M16:
 		InvalidTargets: Wall
 		Versus:
 			Light: 50
-			Medium: 35
+			Medium: 30
 			Heavy: 20
 			Wood: 50
-			Steel: 30
+			Steel: 25
 			Concrete: 15
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffectX
@@ -145,10 +145,10 @@ MachineGun:
 		InvalidTargets: Wall
 		Versus:
 			Light: 60
-			Medium: 40
+			Medium: 35
 			Heavy: 25
 			Wood: 50
-			Steel: 35
+			Steel: 30
 			Concrete: 20
 		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
 	Warhead@2Eff: CreateEffectX

@@ -1,11 +1,11 @@
 Grenade:
 	ReloadDelay: 60
-	Range: 4c0
+	Range: 4c256
 	Projectile: Bullet
-		Speed: 119
+		Speed: 128
 		Blockable: false
 		Angle: 62
-		Inaccuracy: 213
+		Inaccuracy: 230
 		Image: BOMB
 		Shadow: true
 	Warhead@1Dam: SpreadDamageX
@@ -14,11 +14,11 @@ Grenade:
 		Damage: 500
 		Versus:
 			None: 75
-			Wood: 65
+			Wood: 75
 			Steel: 50
 			Light: 75
-			Medium: 60
-			Heavy: 35
+			Medium: 50
+			Heavy: 28
 		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
 	Warhead@2Smu: LeaveSmudgeX
 		SmudgeType: Crater
@@ -59,6 +59,7 @@ RPGLauncher:
 		Versus:
 			None: 50
 			Wood: 65
+			Steel: 80
 			Light: 75
 			Medium: 65
 			Heavy: 50
@@ -92,7 +93,7 @@ RPGLauncher:
 		Palette: flashyeffect
 	Warhead@1Dam: SpreadDamageX
 		Spread: 85
-		Falloff: 100, 40, 20, 10, 0
+		Falloff: 100, 40, 20, 0
 		Damage: 250
 		Versus:
 			None: 30
